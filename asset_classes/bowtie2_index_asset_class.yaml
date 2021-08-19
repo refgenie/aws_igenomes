@@ -1,0 +1,6 @@
+name: bowtie2_index
+version: 0.0.1
+description: Genome index for bowtie, produced with bowtie-build
+seek_keys:
+  bowtie2_index: "{genome}"
+parents: []

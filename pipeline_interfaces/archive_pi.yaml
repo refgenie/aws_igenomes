@@ -1,0 +1,9 @@
+pipeline_name: refgenie_archive
+pipeline_type: project
+input_schema: https://schema.databio.org/refgenie/refgenie_build.yaml
+command_template: >
+  refgenieserver archive -c $REFGENIE 
+compute:
+  mem: 8000
+  cores: 2
+  time: 1-00:00:00

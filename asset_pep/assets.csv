@@ -1,0 +1,17 @@
+genome,asset
+homo_sapiens-ncbi-grch38,fasta
+homo_sapiens-ncbi-grch38,gtf
+homo_sapiens-ncbi-grch38,bowtie2_index
+homo_sapiens-ncbi-grch38,bwa_index
+homo_sapiens-ncbi-grch38decoy,fasta
+homo_sapiens-ncbi-grch38decoy,gtf
+homo_sapiens-ncbi-grch38decoy,bowtie2_index
+homo_sapiens-ncbi-grch38decoy,bwa_index
+homo_sapiens-ucsc-hg38,fasta
+homo_sapiens-ucsc-hg38,gtf
+homo_sapiens-ucsc-hg38,bowtie2_index
+homo_sapiens-ucsc-hg38,bwa_index
+homo_sapiens-ucsc-hg19,fasta
+homo_sapiens-ucsc-hg19,gtf
+homo_sapiens-ucsc-hg19,bowtie2_index
+homo_sapiens-ucsc-hg19,bwa_index

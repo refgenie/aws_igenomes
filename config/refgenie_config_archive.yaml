@@ -1,0 +1,380 @@
+config_version: 0.5
+genome_folder: /project/shefflab//deploy/aws_igenomes/genomes
+genome_archive_folder: /project/shefflab//deploy/aws_igenomes/genomes/archive
+genome_archive_config: refgenie_config_archive.yaml
+recipe_folder: /project/shefflab//deploy/aws_igenomes/genomes/archive/recipes
+asset_class_folder: /project/shefflab//deploy/aws_igenomes/genomes/archive/asset_classes
+genome_servers:
+  - http://refgenomes.databio.org
+remotes:
+  http:
+    prefix: http://awspds.refgenie.databio.org/aws_igenomes/
+    description: HTTP compatible path
+  s3:
+    prefix: s3://awspds.refgenie.databio.org/aws_igenomes/
+    description: S3 compatible path
+genomes:
+  2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882:
+    aliases:
+      - homo_sapiens-ucsc-hg38
+    assets:
+      fasta:
+        tags:
+          1.10+htslib-1.10.2:
+            asset_path: fasta
+            asset_digest: ae71821f8988dcfade110ecd4a1a4407
+            custom_properties:
+              version: 1.10+htslib-1.10.2
+            date_built: 2021-08-18_19:17
+            seek_keys:
+              fasta: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.fa
+              fai: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.fa.fai
+              chrom_sizes: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.chrom.sizes
+              dict: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.dict
+              dir: .
+            asset_parents: []
+            archive_digest: b55ef77744190d5618943611f7a50592
+            archive_size: 905.2MB
+            asset_size: 2.9GB
+            asset_children:
+              - 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882/bwa_index:default
+            legacy_archive_digest: 826f6668964de5128e5e922dbbba7cc4
+        default_tag: 1.10+htslib-1.10.2
+        asset_class: fasta
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+      gtf:
+        tags:
+          default:
+            asset_path: gtf
+            asset_digest: 003d3e8601698d8f4ac6a9dec173ddae
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_19:51
+            seek_keys:
+              gtf: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.gtf
+              dir: .
+            asset_parents: []
+            archive_digest: bd0daf1e40d23f24d2ec3816fe19c069
+            archive_size: 7.4MB
+            asset_size: 144.5MB
+            asset_children: []
+            legacy_archive_digest: f95517929fe87300818ef8866933acee
+        default_tag: default
+        asset_class: gtf
+        asset_description: No description
+      bowtie2_index:
+        asset_description: No description
+        default_tag: default
+        tags:
+          default:
+            asset_path: bowtie2_index
+            seek_keys:
+              bowtie2_index: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882
+              dir: .
+            archive_digest: 679ed889154793bef96d70d67a261a93
+            archive_size: 3.5GB
+            asset_size: 3.9GB
+            asset_parents: []
+            asset_children: []
+            asset_digest: c788f8b3c40727c7f44e860de54bf825
+            legacy_archive_digest: e313a6f9258cec209b354800de653a9c
+      bwa_index:
+        asset_description: No description
+        default_tag: default
+        tags:
+          default:
+            asset_path: bwa_index
+            seek_keys:
+              bwa_index: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.fa
+              dir: .
+            archive_digest: c763975aa1d77f0e09e421f1dbbceb2f
+            archive_size: 3.2GB
+            asset_size: 5.1GB
+            asset_parents:
+              - 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882/fasta:1.10+htslib-1.10.2
+            asset_children: []
+            asset_digest: 49671c1b4dee18377be549d672461727
+            legacy_archive_digest: 60829980667e4101510802a125e18b17
+    genome_description: No description
+  e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3:
+    aliases:
+      - homo_sapiens-ucsc-hg19
+    assets:
+      fasta:
+        tags:
+          1.10+htslib-1.10.2:
+            asset_path: fasta
+            asset_digest: e00ef6cbeabc7ef8e75c29b698e9816d
+            custom_properties:
+              version: 1.10+htslib-1.10.2
+            date_built: 2021-08-18_19:17
+            seek_keys:
+              fasta: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.fa
+              fai: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.fa.fai
+              chrom_sizes: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.chrom.sizes
+              dict: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.dict
+              dir: .
+            asset_parents: []
+            archive_digest: 409ad9562d48e95575e1d8d74eff1491
+            archive_size: 893.6MB
+            asset_size: 2.9GB
+            asset_children:
+              - e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3/bwa_index:default
+            legacy_archive_digest: f87d2fc663e2c6e299166885c3d24860
+        default_tag: 1.10+htslib-1.10.2
+        asset_class: fasta
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+      gtf:
+        tags:
+          default:
+            asset_path: gtf
+            asset_digest: 5506607164d8c2ff01c922af70da161f
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_19:51
+            seek_keys:
+              gtf: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.gtf
+              dir: .
+            asset_parents: []
+            archive_digest: ca75e230bdace0d8d0a5168349f524e5
+            archive_size: 7.0MB
+            asset_size: 135.5MB
+            asset_children: []
+            legacy_archive_digest: dbe757446dd98a2c4bdadcd04dcaa73c
+        default_tag: default
+        asset_class: gtf
+        asset_description: No description
+      bowtie2_index:
+        asset_description: No description
+        default_tag: default
+        tags:
+          default:
+            asset_path: bowtie2_index
+            seek_keys:
+              bowtie2_index: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3
+              dir: .
+            archive_digest: acd38635beab1e34b9e597641fed94e1
+            archive_size: 3.4GB
+            asset_size: 3.8GB
+            asset_parents: []
+            asset_children: []
+            asset_digest: b282613f132ae6295b44debac9879ff2
+            legacy_archive_digest: 5e51b8aa882633df755063573dbf30f1
+      bwa_index:
+        asset_description: No description
+        default_tag: default
+        tags:
+          default:
+            asset_path: bwa_index
+            seek_keys:
+              bwa_index: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.fa
+              dir: .
+            archive_digest: a66348e3d6cd47a3a50293c5060c0b89
+            archive_size: 3.2GB
+            asset_size: 5.0GB
+            asset_parents:
+              - e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3/fasta:1.10+htslib-1.10.2
+            asset_children: []
+            asset_digest: ae59c23227574dda55d95977845ad0ee
+            legacy_archive_digest: a05a23158cbc68274283a8d08a82c113
+    genome_description: No description
+  8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b:
+    aliases:
+      - homo_sapiens-ncbi-grch38decoy
+    assets:
+      fasta:
+        tags:
+          1.10+htslib-1.10.2:
+            asset_path: fasta
+            asset_digest: 4d335b851ac3938e82d70ce0b210b8c1
+            custom_properties:
+              version: 1.10+htslib-1.10.2
+            date_built: 2021-08-18_19:17
+            seek_keys:
+              fasta: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.fa
+              fai: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.fa.fai
+              chrom_sizes: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.chrom.sizes
+              dict: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.dict
+              dir: .
+            asset_parents: []
+            archive_digest: 651b2fa0a29417bcf7147c2abd44e3f4
+            archive_size: 828.7MB
+            asset_size: 2.9GB
+            asset_children:
+              - 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b/bwa_index:default
+            legacy_archive_digest: 27280b1172c4e93cd3e27f6ccc2d07a5
+        default_tag: 1.10+htslib-1.10.2
+        asset_class: fasta
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+      gtf:
+        tags:
+          default:
+            asset_path: gtf
+            asset_digest: ddf30267d76ea8a158ab39e112291d2b
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_19:50
+            seek_keys:
+              gtf: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.gtf
+              dir: .
+            asset_parents: []
+            archive_digest: c17eb591f4cf3e231e21497000a2bb94
+            archive_size: 11.7MB
+            asset_size: 262.1MB
+            asset_children: []
+            legacy_archive_digest: 3786e95dbfd36048334dc244268ebcba
+        default_tag: default
+        asset_class: gtf
+        asset_description: No description
+      bowtie2_index:
+        asset_description: No description
+        default_tag: default
+        tags:
+          default:
+            asset_path: bowtie2_index
+            seek_keys:
+              bowtie2_index: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b
+              dir: .
+            archive_digest: f68488a8253a59beda5a6c93d4810cfa
+            archive_size: 3.5GB
+            asset_size: 3.9GB
+            asset_parents: []
+            asset_children: []
+            asset_digest: a33802ad25a776d6f9c70a17ac4eb792
+            legacy_archive_digest: 7989c6ce5d287c3fb0480f83e44e5d28
+      bwa_index:
+        asset_description: No description
+        default_tag: default
+        tags:
+          default:
+            asset_path: bwa_index
+            seek_keys:
+              bwa_index: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.fa
+              dir: .
+            archive_digest: 66aef2c8d4cb026c4a6098979a982a02
+            archive_size: 3.2GB
+            asset_size: 5.1GB
+            asset_parents:
+              - 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b/fasta:1.10+htslib-1.10.2
+            asset_children: []
+            asset_digest: a32a26a682570fd45db5c047f6efcea1
+            legacy_archive_digest: 6a2fd4a732a3470847d98b1991183fec
+    genome_description: No description
+  2230c535660fb4774114bfa966a62f823fdb6d21acf138d4:
+    aliases:
+      - homo_sapiens-ncbi-grch38
+    assets:
+      fasta:
+        tags:
+          1.10+htslib-1.10.2:
+            asset_path: fasta
+            asset_digest: 1948eb1a0b7b483ad15332d77115ec34
+            custom_properties:
+              version: 1.10+htslib-1.10.2
+            date_built: 2021-08-18_19:17
+            seek_keys:
+              fasta: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.fa
+              fai: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.fa.fai
+              chrom_sizes: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.chrom.sizes
+              dict: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.dict
+              dir: .
+            asset_parents: []
+            archive_digest: 4aa496bfaa1b67ed47bc69664c4d20d0
+            archive_size: 832.5MB
+            asset_size: 2.9GB
+            asset_children:
+              - 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4/bwa_index:default
+            legacy_archive_digest: 68a5e8b57307477fba95f5ee3a2a20cc
+        default_tag: 1.10+htslib-1.10.2
+        asset_class: fasta
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+      gtf:
+        tags:
+          default:
+            asset_path: gtf
+            asset_digest: ddf30267d76ea8a158ab39e112291d2b
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_19:50
+            seek_keys:
+              gtf: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.gtf
+              dir: .
+            asset_parents: []
+            archive_digest: 305ad973217251b71c7667f645331a08
+            archive_size: 11.7MB
+            asset_size: 262.1MB
+            asset_children: []
+            legacy_archive_digest: 1a8ef57f4a8235b1fd021710233055c2
+        default_tag: default
+        asset_class: gtf
+        asset_description: No description
+      bowtie2_index:
+        asset_description: No description
+        default_tag: default
+        tags:
+          default:
+            archive_digest: b4d44748718970a1f632670f2984a021
+      bwa_index:
+        asset_description: No description
+        default_tag: default
+        tags:
+          default:
+            asset_path: bwa_index
+            seek_keys:
+              bwa_index: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.fa
+              dir: .
+            archive_digest: 9cd36b013bf781e91f4a39a221561a63
+            archive_size: 3.2GB
+            asset_size: 5.1GB
+            asset_parents:
+              - 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4/fasta:1.10+htslib-1.10.2
+            asset_children: []
+            asset_digest: 6f8527e78c91fe17f9d08eddb1ddf570
+            legacy_archive_digest: 8ec44ecc50af6274b1d635b919c6797e
+    genome_description: No description
+recipes:
+  fasta:
+    path: fasta_asset_recipe.yaml
+    source: self-added
+    version: 0.0.1
+    output_asset_class: fasta
+    description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+  bowtie2_index:
+    path: bowtie2_index_asset_recipe.yaml
+    source: self-added
+    version: 0.0.1
+    output_asset_class: bowtie2_index
+    description: Genome index for bowtie, produced with bowtie-build
+  bwa_index:
+    path: bwa_index_asset_recipe.yaml
+    source: self-added
+    version: 0.0.1
+    output_asset_class: bwa_index
+    description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+  gtf:
+    path: gtf_asset_recipe.yaml
+    source: self-added
+    version: 0.0.1
+    output_asset_class: gtf
+    description: GTF file
+asset_classes:
+  fasta:
+    path: fasta_asset_class.yaml
+    source: self-added
+    version: 0.0.1
+    description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
+  gtf:
+    path: gtf_asset_class.yaml
+    source: self-added
+    version: 0.0.1
+    description: GTF annotation asset which provides access to all annotated transcripts
+  bowtie2_index:
+    path: bowtie2_index_asset_class.yaml
+    source: self-added
+    version: 0.0.1
+    description: Genome index for bowtie, produced with bowtie-build
+  bwa_index:
+    path: bwa_index_asset_class.yaml
+    source: self-added
+    version: 0.0.1
+    description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index

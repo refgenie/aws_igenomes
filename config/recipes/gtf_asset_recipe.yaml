@@ -1,0 +1,16 @@
+name: gtf
+version: 0.0.1
+output_asset_class: gtf
+description: GTF file
+inputs:
+  files:
+    gtf:
+      description: Annotation file in Gene Transfer Format (GTF)
+  params: null
+  assets: null
+container: databio/refgenie
+command_template_list:
+- cp {{files.gtf}} {{asset_outfolder}}/{{genome}}.gtf
+custom_properties:
+  version: ''
+default_tag: default

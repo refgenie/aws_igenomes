@@ -1,0 +1,323 @@
+config_version: 0.5
+genome_folder: /project/shefflab//deploy/aws_igenomes/genomes
+recipe_folder: /project/shefflab/deploy/aws_igenomes/aws_igenomes/config/recipes
+asset_class_folder: /project/shefflab/deploy/aws_igenomes/aws_igenomes/config/asset_classes
+genome_servers: 
+ - http://refgenomes.databio.org
+genomes:
+  2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882:
+    aliases: 
+     - homo_sapiens-ucsc-hg38
+    assets:
+      gtf:
+        tags:
+          default:
+            asset_path: gtf
+            asset_digest: 003d3e8601698d8f4ac6a9dec173ddae
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_19:51
+            seek_keys:
+              gtf: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.gtf
+              dir: .
+            asset_parents: []
+        default_tag: default
+        asset_class: gtf
+      bowtie2_index:
+        tags:
+          default:
+            asset_path: bowtie2_index
+            asset_digest: c788f8b3c40727c7f44e860de54bf825
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_21:50
+            seek_keys:
+              bowtie2_index: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882
+              dir: .
+            asset_parents: []
+        default_tag: default
+        asset_class: bowtie2_index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        asset_class: fasta
+        tags:
+          1.10+htslib-1.10.2:
+            asset_path: fasta
+            asset_digest: ae71821f8988dcfade110ecd4a1a4407
+            custom_properties:
+              version: 1.10+htslib-1.10.2
+            date_built: 2021-08-19_14:43
+            seek_keys:
+              fasta: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.fa
+              fai: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.fa.fai
+              chrom_sizes: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.chrom.sizes
+              dict: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.dict
+              dir: .
+            asset_parents: []
+            asset_children: 
+             - 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882/bwa_index:default
+        default_tag: 1.10+htslib-1.10.2
+      bwa_index:
+        tags:
+          default:
+            asset_path: bwa_index
+            asset_digest: 49671c1b4dee18377be549d672461727
+            custom_properties:
+              version: null
+            date_built: 2021-08-19_15:49
+            seek_keys:
+              bwa_index: 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882.fa
+              dir: .
+            asset_parents: 
+             - 2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882/fasta:1.10+htslib-1.10.2
+        default_tag: default
+        asset_class: bwa_index
+  e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3:
+    aliases: 
+     - homo_sapiens-ucsc-hg19
+    assets:
+      gtf:
+        tags:
+          default:
+            asset_path: gtf
+            asset_digest: 5506607164d8c2ff01c922af70da161f
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_19:51
+            seek_keys:
+              gtf: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.gtf
+              dir: .
+            asset_parents: []
+        default_tag: default
+        asset_class: gtf
+      bowtie2_index:
+        tags:
+          default:
+            asset_path: bowtie2_index
+            asset_digest: b282613f132ae6295b44debac9879ff2
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_21:44
+            seek_keys:
+              bowtie2_index: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3
+              dir: .
+            asset_parents: []
+        default_tag: default
+        asset_class: bowtie2_index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        asset_class: fasta
+        tags:
+          1.10+htslib-1.10.2:
+            asset_path: fasta
+            asset_digest: e00ef6cbeabc7ef8e75c29b698e9816d
+            custom_properties:
+              version: 1.10+htslib-1.10.2
+            date_built: 2021-08-19_14:43
+            seek_keys:
+              fasta: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.fa
+              fai: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.fa.fai
+              chrom_sizes: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.chrom.sizes
+              dict: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.dict
+              dir: .
+            asset_parents: []
+            asset_children: 
+             - e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3/bwa_index:default
+        default_tag: 1.10+htslib-1.10.2
+      bwa_index:
+        tags:
+          default:
+            asset_path: bwa_index
+            asset_digest: ae59c23227574dda55d95977845ad0ee
+            custom_properties:
+              version: null
+            date_built: 2021-08-19_15:50
+            seek_keys:
+              bwa_index: e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3.fa
+              dir: .
+            asset_parents: 
+             - e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3/fasta:1.10+htslib-1.10.2
+        default_tag: default
+        asset_class: bwa_index
+  8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b:
+    aliases: 
+     - homo_sapiens-ncbi-grch38decoy
+    assets:
+      gtf:
+        tags:
+          default:
+            asset_path: gtf
+            asset_digest: ddf30267d76ea8a158ab39e112291d2b
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_19:50
+            seek_keys:
+              gtf: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.gtf
+              dir: .
+            asset_parents: []
+        default_tag: default
+        asset_class: gtf
+      bowtie2_index:
+        tags:
+          default:
+            asset_path: bowtie2_index
+            asset_digest: a33802ad25a776d6f9c70a17ac4eb792
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_21:58
+            seek_keys:
+              bowtie2_index: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b
+              dir: .
+            asset_parents: []
+        default_tag: default
+        asset_class: bowtie2_index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        asset_class: fasta
+        tags:
+          1.10+htslib-1.10.2:
+            asset_path: fasta
+            asset_digest: 4d335b851ac3938e82d70ce0b210b8c1
+            custom_properties:
+              version: 1.10+htslib-1.10.2
+            date_built: 2021-08-19_14:39
+            seek_keys:
+              fasta: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.fa
+              fai: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.fa.fai
+              chrom_sizes: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.chrom.sizes
+              dict: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.dict
+              dir: .
+            asset_parents: []
+            asset_children: 
+             - 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b/bwa_index:default
+        default_tag: 1.10+htslib-1.10.2
+      bwa_index:
+        tags:
+          default:
+            asset_path: bwa_index
+            asset_digest: a32a26a682570fd45db5c047f6efcea1
+            custom_properties:
+              version: null
+            date_built: 2021-08-19_14:53
+            seek_keys:
+              bwa_index: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.fa
+              dir: .
+            asset_parents: 
+             - 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b/fasta:1.10+htslib-1.10.2
+        default_tag: default
+        asset_class: bwa_index
+  2230c535660fb4774114bfa966a62f823fdb6d21acf138d4:
+    aliases: 
+     - homo_sapiens-ncbi-grch38
+    assets:
+      gtf:
+        tags:
+          default:
+            asset_path: gtf
+            asset_digest: ddf30267d76ea8a158ab39e112291d2b
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_19:50
+            seek_keys:
+              gtf: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.gtf
+              dir: .
+            asset_parents: []
+        default_tag: default
+        asset_class: gtf
+      bowtie2_index:
+        tags:
+          default:
+            asset_path: bowtie2_index
+            asset_digest: 04880a3192a69bbfdc36da25b67203cb
+            custom_properties:
+              version: null
+            date_built: 2021-08-18_21:54
+            seek_keys:
+              bowtie2_index: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4
+              dir: .
+            asset_parents: []
+        default_tag: default
+        asset_class: bowtie2_index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        asset_class: fasta
+        tags:
+          1.10+htslib-1.10.2:
+            asset_path: fasta
+            asset_digest: 1948eb1a0b7b483ad15332d77115ec34
+            custom_properties:
+              version: 1.10+htslib-1.10.2
+            date_built: 2021-08-19_14:31
+            seek_keys:
+              fasta: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.fa
+              fai: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.fa.fai
+              chrom_sizes: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.chrom.sizes
+              dict: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.dict
+              dir: .
+            asset_parents: []
+            asset_children: 
+             - 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4/bwa_index:default
+        default_tag: 1.10+htslib-1.10.2
+      bwa_index:
+        tags:
+          default:
+            asset_path: bwa_index
+            asset_digest: 6f8527e78c91fe17f9d08eddb1ddf570
+            custom_properties:
+              version: null
+            date_built: 2021-08-19_14:46
+            seek_keys:
+              bwa_index: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.fa
+              dir: .
+            asset_parents: 
+             - 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4/fasta:1.10+htslib-1.10.2
+        default_tag: default
+        asset_class: bwa_index
+recipes:
+  fasta:
+    path: fasta_asset_recipe.yaml
+    source: self-added
+    version: 0.0.1
+    output_asset_class: fasta
+    description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+  bowtie2_index:
+    path: bowtie2_index_asset_recipe.yaml
+    source: self-added
+    version: 0.0.1
+    output_asset_class: bowtie2_index
+    description: Genome index for bowtie, produced with bowtie-build
+  bwa_index:
+    path: bwa_index_asset_recipe.yaml
+    source: self-added
+    version: 0.0.1
+    output_asset_class: bwa_index
+    description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+  gtf:
+    path: gtf_asset_recipe.yaml
+    source: self-added
+    version: 0.0.1
+    output_asset_class: gtf
+    description: GTF file
+asset_classes:
+  fasta:
+    path: fasta_asset_class.yaml
+    source: https://raw.githubusercontent.com/refgenie/recipes/master/asset_classes/fasta_asset_class.yaml?token=AFN54THKX6X4RTLIYPMRUALBE6PMI
+    version: 0.0.1
+    description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
+  gtf:
+    path: gtf_asset_class.yaml
+    source: self-added
+    version: 0.0.1
+    description: GTF annotation asset which provides access to all annotated transcripts
+  bowtie2_index:
+    path: bowtie2_index_asset_class.yaml
+    source: self-added
+    version: 0.0.1
+    description: Genome index for bowtie, produced with bowtie-build
+  bwa_index:
+    path: bwa_index_asset_class.yaml
+    source: self-added
+    version: 0.0.1
+    description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+genome_archive_folder: /project/shefflab//deploy/aws_igenomes/genomes/archive
+genome_archive_config: refgenie_config_archive.yaml

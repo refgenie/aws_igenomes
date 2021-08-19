@@ -1,0 +1,12 @@
+pipeline_name: refgenieserver_archive
+pipeline_type: sample
+command_template: >
+  pipestat status set running -f {pipestat.results_file} -n {pipestat.namespace} -r {pipestat.record_id}
+  refgenieserver archive --dbg {sample.genome}/{sample.asset} --config $REFGENIE 
+  pipestat status set completed -f {pipestat.results_file} -n {pipestat.namespace} -r {pipestat.record_id}
+compute:
+  bulker_crate: databio/refgenie:0.7.6
+  mem: 6000
+  cores: 2
+  time: 03:00:00
+  partition: standard

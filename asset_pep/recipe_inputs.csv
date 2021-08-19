@@ -1,0 +1,9 @@
+sample_name,input_id,input_value,input_type,md5
+homo_sapiens-ncbi-grch38-fasta,fasta,s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa,files,
+homo_sapiens-ncbi-grch38-gtf,gtf,s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Annotation/Genes/genes.gtf,files,
+homo_sapiens-ncbi-grch38decoy-fasta,fasta,s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38Decoy/Sequence/WholeGenomeFasta/genome.fa,files,
+homo_sapiens-ncbi-grch38decoy-gtf,gtf,s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38Decoy/Annotation/Genes/genes.gtf,files,
+homo_sapiens-ucsc-hg38-fasta,fasta,s3://ngi-igenomes/igenomes/Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa,files,
+homo_sapiens-ucsc-hg38-gtf,gtf,s3://ngi-igenomes/igenomes/Homo_sapiens/UCSC/hg38/Annotation/Genes/genes.gtf,files,
+homo_sapiens-ucsc-hg19-fasta,fasta,s3://ngi-igenomes/igenomes/Homo_sapiens/UCSC/hg19/Sequence/WholeGenomeFasta/genome.fa,files,
+homo_sapiens-ucsc-hg19-gtf,gtf,s3://ngi-igenomes/igenomes/Homo_sapiens/UCSC/hg19/Annotation/Genes/genes.gtf,files,

@@ -1,0 +1,5 @@
+sample_name,genome_description
+homo_sapiens-ucsc-hg19-fasta,The GRCh37 reference sequence from UCSC
+homo_sapiens-ucsc-hg38-fasta,The GRCh38 reference sequence from UCSC
+homo_sapiens-ncbi-grch38-fasta,The GRCh38 reference sequence from NCBI
+homo_sapiens-ncbi-grch38decoy-fasta,The GRCh38 decoy reference sequence from NCBI
