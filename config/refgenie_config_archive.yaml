@@ -1,6 +1,13 @@
 config_version: 0.5
 genome_folder: /project/shefflab//deploy/aws_igenomes/genomes
 recipe_folder: /project/shefflab//deploy/aws_igenomes/genomes/archive/recipes
+remotes:
+  http:
+    prefix: http://awspds.refgenie.databio.org/aws_igenomes/
+    description: HTTP compatible path
+  s3:
+    prefix: s3://awspds.refgenie.databio.org/aws_igenomes/
+    description: S3 compatible path
 recipes:
   fasta:
     path: fasta_asset_recipe.yaml
