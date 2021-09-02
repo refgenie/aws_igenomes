@@ -1,0 +1,15 @@
+pep_version: "2.1.0"
+name: refgenieserver-archive
+sample_table: assets_auto_server.csv
+looper:
+  output_dir: $GENOMES/archive_logs
+
+sample_modifiers:
+  append:
+    sample_name: "sn"
+    pipeline_interfaces: ../pipeline_interfaces/archive_piface.yaml
+  derive:
+    attributes: ['sample_name']
+    sources:
+      sn: "{genome}-{asset}"
+

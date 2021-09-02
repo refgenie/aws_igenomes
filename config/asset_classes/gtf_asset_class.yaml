@@ -2,5 +2,5 @@ name: gtf
 version: 0.0.1
 description: GTF annotation asset which provides access to all annotated transcripts
 seek_keys:
-  gtf: '{genome}.gtf'
+  gtf: '{genome}.gtf.gz'
 parents: []

@@ -2,12 +2,12 @@ pipeline_name: refgenie-build
 pipeline_type: sample
 input_schema: build_inschema.yaml
 pre_submit:
-  command_templates: 
+  command_templates:
     - "{looper.piface_dir}/build-compute-params.py -a {sample.asset} -g {sample.genome}"
 compute:
-  bulker_crate: databio/refgenie:0.7.6
+  bulker_crate: databio/refgenie:0.7.8
 command_template: >
-  refgenie build { sample.genome }/{ sample.asset } --map
+  refgenie build { sample.genome }/{ sample.asset } --map -R
   {% if sample.genome_description is defined %}--genome-description '{ sample.genome_description }'{% endif %}
   {%- if sample.input_value is defined -%}
     {%- for it in sample.input_type -%}

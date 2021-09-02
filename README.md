@@ -119,16 +119,20 @@ refgenie init -c $REFGENIE -f $GENOMES -u http://awspds.refgenie.databio.org/aws
 
 ## Step 3: Add recipes and asset classes
 
-Add asset classes and recipes for assets to be built
+Add asset classes and recipes for assets to be built.
 
-For example:
+For example, clone the recipes repository and iterate over the files and add them one by one:
 
-```
-refgenie asset_class add --source https://raw.githubusercontent.com/refgenie/recipes/master/asset_classes/fasta_asset_class.yaml?token=AFN54TFM7FRIB5XDUTOKHEDBE2HQK
-# continue for all asset classes
+```bash
+git clone https://github.com/refgenie/recipes.git $CODE
 
-refgenie recipe add --source https://raw.githubusercontent.com/refgenie/recipes/master/recipes/fasta_asset_recipe.yaml?token=AFN54TB2E236TNVVW2T5VGTBE2HTI
-# continue for all recipes
+for file in `ls $CODE/recipes/asset_classes`; do
+    refgenie asset_class add --source $CODE/recipes/asset_classes/$file --force
+done
+
+for file in `ls $CODE/recipes/recipes`; do
+    refgenie recipe add --source $CODE/recipes/recipes/$file --force
+done
 ```
 
 ## Step 4: Build assets
@@ -233,3 +237,5 @@ Now everything is ready to deploy. If using refgenieserver directly, you'll run 
 ```
 ga -A; gcm "Deploy to ECS"; gpoh
 ```
+
+looper run asset_pep/refgenie_build_cfg_auto.yaml -p bulker_slurm --sel-attr asset --sel-incl star_index --command-extra="-R"

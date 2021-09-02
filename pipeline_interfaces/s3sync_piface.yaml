@@ -2,11 +2,17 @@ pipeline_name: download_input_files
 pipeline_type: sample
 command_template: >
   {%- for itype in sample.input_type -%}
+    {% set output_file = sample.local_input + sample.input_id[loop.index0] -%}
     {% if itype == 'files' %}
-      if [ -f "{sample.input_value[loop.index0]}" ]; then
-        cp {sample.input_value[loop.index0]} {sample.local_input + sample.input_id[loop.index0]}
+      if [[ -f "{ output_file }" ]]; then
+          echo "{ output_file } exists, skipping."
       else
-        { 'aws --no-sign-request --region eu-west-1 s3 cp ' + sample.input_value[loop.index0] + ' ' + sample.local_input + sample.input_id[loop.index0] }; 
+        echo "{ output_file } doesn't exist, transferring."
+        if [ -f "{sample.input_value[loop.index0]}" ]; then
+          cp {sample.input_value[loop.index0]} output_file
+        else
+          { 'aws --no-sign-request --region eu-west-1 s3 cp ' + sample.input_value[loop.index0] + ' ' + output_file }; 
+        fi
       fi
     {% endif %}
   {%- endfor -%}

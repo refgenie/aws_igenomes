@@ -3,8 +3,8 @@ version: 0.0.1
 output_asset_class: bwa_index
 description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
 inputs:
-  files: null
-  params: null
+  files: {}
+  params: {}
   assets:
     fasta:
       asset_class: fasta
@@ -16,4 +16,4 @@ command_template_list:
 - bwa index {{asset_outfolder}}/{{genome}}.fa
 custom_properties:
   version: ''
-default_tag: default
+default_tag: '{{custom_properties.version}}'

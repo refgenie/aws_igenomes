@@ -6,7 +6,7 @@ description: DNA sequences in the FASTA format, indexed FASTA (produced with sam
 inputs:
   files:
     fasta:
-      description: gzipped fasta file
+      description: A FASTA file. Gzipped or not.
   params: null
   assets: null
 container: docker.io/databio/refgenie
@@ -19,5 +19,17 @@ command_template_list:
 - cut -f 1,2 {{asset_outfolder}}/{{genome}}.fa.fai > {{asset_outfolder}}/{{genome}}.chrom.sizes
 - cat {{asset_outfolder}}/{{genome}}.fa | samtools dict -o {{asset_outfolder}}/{{genome}}.dict
 custom_properties:
-  version: samtools --version-only
-default_tag: '{{custom_properties.version}}'
+  version: samtools --version-only | awk -F+ '{print $1}'
+default_tag: samtools-{{custom_properties.version}}
+test:
+  inputs:
+    fasta: http://big.databio.org/refgenie_raw/t7-fasta-fasta
+  outputs:
+    fasta:
+      md5sum: e2f817b80cc40a127f93e09c919df543
+    fai:
+      md5sum: 2e472497cd289842682ebda217eaa020
+    dict:
+      md5sum: caf5d88cb49043143592576e91c27802
+    chrom_sizes:
+      md5sum: 7f0b08ef95859b76caf7e16bf1e97188

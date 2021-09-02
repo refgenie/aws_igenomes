@@ -1,0 +1,34 @@
+pep_version: "2.1.0"
+name: refgenie-build
+sample_table: assets_auto.csv
+subsample_table:
+  - recipe_inputs_auto.csv
+  - genome_descriptions_auto.csv
+looper:
+  output_dir: $GENOMES
+  pipeline_interfaces: ../pipeline_interfaces/archive_pi.yaml
+
+sample_modifiers:
+  append:
+    local_input: "LOCAL_INPUT"
+    sample_name: "sn"
+    pipeline_interfaces: ../pipeline_interfaces/build_piface.yaml
+    pipestat_results_file: "RESULTS_FILE"
+  derive:
+    attributes:
+      - sample_name
+      - local_input
+      - pipestat_results_file
+    sources:
+      sn: "{genome}-{asset}"
+      LOCAL_INPUT: "$REFGENIE_RAW/{genome}-{asset}-"
+      RESULTS_FILE: "pipestat_results/{sample_name}_pipestat_results_build.yaml" # placed in "{looper.output_dir}" if not absolute
+
+project_modifiers:
+  amend:
+    getfiles:
+      sample_modifiers:
+        remove:
+          - pipeline_interfaces
+        append:
+          pipeline_interfaces: ../pipeline_interfaces/s3sync_piface.yaml

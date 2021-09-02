@@ -8,10 +8,11 @@ https://raw.githubusercontent.com/ewels/AWS-iGenomes/master/ngi-igenomes_file_ma
 from rich.progress import track
 
 assets = {
-    "bismark_bt1_index": {},
-    "bismark_bt2_index": {},
+    "bismark_as1_index": {},
+    "bismark_as2_index": {},
     "blacklist": {},
     "bowtie2_index": {},
+    "bowtie1_index": {},
     "bwa_index": {},
     "cellranger_reference": {},
     "dbnsfp": {},
@@ -35,6 +36,25 @@ assets = {
     "tallymer_index": {},
     "tgMap": {},
     "bowtie2_index_extra": {},
+    "small_rna": {
+        "hairpin": "{bucket}/{org}/{src}/{build}/Annotation/SmallRNA/hairpin.fa",
+        "mature": "{bucket}/{org}/{src}/{build}/Annotation/SmallRNA/mature.fa",
+    },
+    "abundant_sequences": {
+        "adapter_contam": "{bucket}/{org}/{src}/{build}/Sequence/AbundantSequences/adapter_contam1.fa",
+        "phix": "{bucket}/{org}/{src}/{build}/Sequence/AbundantSequences/phix.fa",
+        "polyA": "{bucket}/{org}/{src}/{build}/Sequence/AbundantSequences/polyA.fa",
+        "polyC": "{bucket}/{org}/{src}/{build}/Sequence/AbundantSequences/polyC.fa",
+    },
+}
+
+assets = {
+    "abundant_sequences": {
+        "adapter_contam": "{bucket}/{org}/{src}/{build}/Sequence/AbundantSequences/adapter_contam1.fa",
+        "phix": "{bucket}/{org}/{src}/{build}/Sequence/AbundantSequences/phix.fa",
+        "polyA": "{bucket}/{org}/{src}/{build}/Sequence/AbundantSequences/polyA.fa",
+        "polyC": "{bucket}/{org}/{src}/{build}/Sequence/AbundantSequences/polyC.fa",
+    }
 }
 
 bucket = "s3://ngi-igenomes/igenomes"
@@ -49,8 +69,8 @@ build_prev = None
 org_prev = None
 src_prev = None
 # open csv file
-with open("asset_pep/assets_auto.csv", "w") as out_file, open(
-    "asset_pep/recipe_inputs_auto.csv", "w"
+with open("asset_pep/assets_auto_as.csv", "w") as out_file, open(
+    "asset_pep/recipe_inputs_auto_as.csv", "w"
 ) as out_file2, open("asset_pep/genome_descriptions_auto.csv", "w") as out_file3:
     out_file.write("genome,asset\n")
     out_file2.write("sample_name,input_id,input_value,input_type,md5\n")
@@ -64,12 +84,12 @@ with open("asset_pep/assets_auto.csv", "w") as out_file, open(
             continue
         for asset, inputs in assets.items():
             # creates lines like this: organism-source-build,asset
-            genome = "-".join(l[4:7]).lower()
+            genome = "-".join(l[4:7]).lower().replace(".", "")
             out_file.write(f"{genome},{asset}\n")
             if inputs:
                 for input_key, input_templ in inputs.items():
                     out_file2.write(
-                        f"{genome},{input_key},{input_templ.format(bucket=bucket, org=org, src=src, build=build)},\n"
+                        f"{genome}-{asset},{input_key},{input_templ.format(bucket=bucket, org=org, src=src, build=build)},files\n"
                     )
             if asset == "fasta":
                 out_file3.write(
