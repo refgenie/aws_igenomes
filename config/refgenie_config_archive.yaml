@@ -427,6 +427,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 54f6526d03ade57583418e99578df77a
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       bowtie1_index:
         tags:
           1.3.0:
@@ -445,6 +447,8 @@ genomes:
             asset_size: 131.3MB
             asset_children: []
             legacy_archive_digest: 2de23549d6d25f90013421648f96dee5
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
     genome_description: The Arabidopsis Thaliana (TAIR10) reference sequence from Ensembl
   d532690ea6ebd4a8f8e0fe183f3cad90366dc39a420ee196:
     genome_description: The Bos Taurus (bosTau8) reference sequence from UCSC
@@ -542,6 +546,8 @@ genomes:
             asset_size: 2.6GB
             asset_children: []
             legacy_archive_digest: 46ae6edf37b36f07a5eb6b975e152bf6
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -561,6 +567,8 @@ genomes:
             asset_size: 1.3MB
             asset_children: []
             legacy_archive_digest: 7138c2b28b4a3da0fe9875058d2650d0
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -579,6 +587,8 @@ genomes:
             asset_size: 12.0GB
             asset_children: []
             legacy_archive_digest: 87ceec57840cc435db0882e049a864f5
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -597,6 +607,8 @@ genomes:
             asset_size: 3.5GB
             asset_children: []
             legacy_archive_digest: 77dcc765bea9d2b5e91548edfaf25ff5
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   9e1b1c7b7aa0800609b447b26eecd2fb96eea0534514814d:
     genome_description: The Gallus Gallus (WASHUC2) reference sequence from Ensembl
     aliases: 
@@ -660,6 +672,8 @@ genomes:
             asset_size: 16.6KB
             asset_children: []
             legacy_archive_digest: 191bcc3a158bc2b720108949d21e060b
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -682,6 +696,8 @@ genomes:
              - 9e1b1c7b7aa0800609b447b26eecd2fb96eea0534514814d/bowtie1_index:1.3.0
             asset_digest: 12274e7d0b6c582ff89a8570e919977d
             legacy_archive_digest: dde239a66e05cff5552a154a88574d15
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -697,6 +713,8 @@ genomes:
             asset_children: []
             asset_digest: b96938dfa7f75cd42678be60c23226ac
             legacy_archive_digest: f4ec6ccbe76e40998ea612450f32f128
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bowtie2_index:
         tags:
           2.4.1:
@@ -712,6 +730,8 @@ genomes:
             asset_children: []
             asset_digest: 19940c1d000574eec2d9790a2f6dc75b
             legacy_archive_digest: 928e820de3dab0fe75271a9c8126928e
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -727,6 +747,8 @@ genomes:
             asset_children: []
             asset_digest: 7545180656e942e4a76cb13d194e4b83
             legacy_archive_digest: 133f3bfce98753bf6d059be3fc587743
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   90ce1acb283366d2eeeb8400514eb8959f5c25fb435ffba4:
     genome_description: The Drosophila Melanogaster (dm3) reference sequence from UCSC
     aliases: 
@@ -850,6 +872,8 @@ genomes:
              - 90ce1acb283366d2eeeb8400514eb8959f5c25fb435ffba4/bowtie1_index:1.3.0
             asset_digest: 24440f15af8fd9956d6069dc2e60d660
             legacy_archive_digest: 34562592150e4f5dc8c54317b001fe40
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bwa_index:
         tags:
           0.7.17:
@@ -865,6 +889,8 @@ genomes:
             asset_children: []
             asset_digest: a5d1fe9816a952295e56f3ff90402795
             legacy_archive_digest: ef0b085e345bab3acb556f82dccfb3c9
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   67dd296805602e61419a90c7cdf00d8a2ae4001eb31edb35:
     genome_description: The Gallus Gallus (galGal4) reference sequence from UCSC
     aliases: 
@@ -942,6 +968,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 3b35a017587fcfa45c9abf679fbabed1
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -964,6 +992,8 @@ genomes:
              - 67dd296805602e61419a90c7cdf00d8a2ae4001eb31edb35/bowtie1_index:1.3.0
             asset_digest: e0433a25a1a9b6183daceefdf0c0c510
             legacy_archive_digest: 7991b3e48d0c758a2e11334c4aded8b3
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       small_rna:
         tags:
           default:
@@ -980,6 +1010,8 @@ genomes:
             asset_children: []
             asset_digest: 0a16b8a50e9dd90a0a484556d5aafe59
             legacy_archive_digest: 9e9c5fbe4455a9ad813b8f11e1494930
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
   98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0:
     genome_description: The Pan Troglodytes (panTro2) reference sequence from UCSC
     aliases: 
@@ -1057,6 +1089,8 @@ genomes:
             asset_children: []
             asset_digest: 9c5ab1cf2d6c670a9150c0a94620f7f8
             legacy_archive_digest: 62ed4fa073e4e67baed5c7b7c33e09b5
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bwa_index:
         tags:
           0.7.17:
@@ -1072,6 +1106,8 @@ genomes:
             asset_children: []
             asset_digest: 899f1e5fbb64d4a9078d1f180d20e29a
             legacy_archive_digest: b86b66869292bf0b5c9ae04b6504bb57
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8:
     genome_description: The Arabidopsis Thaliana (TAIR10) reference sequence from NCBI
     aliases: 
@@ -1119,6 +1155,8 @@ genomes:
             asset_size: 2.5GB
             asset_children: []
             legacy_archive_digest: 14794ed46f6262ee52a8b304c4c54bfe
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -1137,6 +1175,8 @@ genomes:
             asset_size: 130.7MB
             asset_children: []
             legacy_archive_digest: 64610812732e01e5ef0bfb6b13fd7373
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -1156,6 +1196,8 @@ genomes:
             asset_size: 1.2MB
             asset_children: []
             legacy_archive_digest: 6895192e90e4cb22577deac227ce90ad
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -1174,6 +1216,8 @@ genomes:
             asset_size: 569.1MB
             asset_children: []
             legacy_archive_digest: cafe5e6cb5534bf963c18f3491862cdd
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -1192,6 +1236,8 @@ genomes:
             asset_size: 168.7MB
             asset_children: []
             legacy_archive_digest: 1cfb9b7225eb14b347e60b0f8aca203d
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -1210,6 +1256,8 @@ genomes:
             asset_size: 200.0MB
             asset_children: []
             legacy_archive_digest: 55e88d8e7215d8785434404261ad3294
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   d517bf07149fc5248d2983618ebdb07584d2a9a281729fc1:
     genome_description: The Caenorhabditis Elegans (WS210) reference sequence from Ensembl
     aliases: 
@@ -1279,6 +1327,8 @@ genomes:
              - d517bf07149fc5248d2983618ebdb07584d2a9a281729fc1/bowtie1_index:1.3.0
             asset_digest: fa6f5a33bfc04ac3459921d91b8eb9b6
             legacy_archive_digest: c958ebd82addf7a10b68a30730c7f6e7
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -1294,6 +1344,8 @@ genomes:
             asset_children: []
             asset_digest: 8560f4acbafb34574c5caba8c2a7f24b
             legacy_archive_digest: 96d911a03aef4454382e10e10ba44b4e
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -1309,6 +1361,8 @@ genomes:
             asset_children: []
             asset_digest: 6a96a6773208bd8ccf61bf7d1ee9d7f7
             legacy_archive_digest: ce2d54f47db5a55bff471d66f712160a
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -1325,6 +1379,8 @@ genomes:
             asset_children: []
             asset_digest: aa5438f564f3ca0c396551da55d49d84
             legacy_archive_digest: 24771cb9095c58f3e21f69b3f84829ab
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -1340,6 +1396,8 @@ genomes:
             asset_children: []
             asset_digest: c6a4e3fa0f4e78e9f97e3b8907464419
             legacy_archive_digest: 3138e76b17482cbc2516913a7fff5e9d
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -1358,6 +1416,8 @@ genomes:
             asset_size: 144.6MB
             asset_children: []
             legacy_archive_digest: 0e3c2b3c9624749f90d8b8b3f441d30d
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   9d81909a0e8cdc0a7878e67b1bff97b72ef2680e9c969882:
     genome_description: The Glycine Max (Gm01) reference sequence from Ensembl
     aliases: 
@@ -1482,6 +1542,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: aebca81773c71c463438b36a3e518c9b
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       star_index:
         tags:
           2.7.3a:
@@ -1497,6 +1559,8 @@ genomes:
             asset_children: []
             asset_digest: fc61b9ce34dced9e1193e0ed0ad6881c
             legacy_archive_digest: ed1bb277c94bcd6c002da9c6979f76f9
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
   37cbc002d76f52a5a839435513a93759b6c03009319dee67:
     genome_description: The Gallus Gallus (Galgal4) reference sequence from Ensembl
     aliases: 
@@ -1538,6 +1602,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: e6275a5e1b84506ec9481bbb7a0643b0
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -1560,6 +1626,8 @@ genomes:
              - 37cbc002d76f52a5a839435513a93759b6c03009319dee67/bowtie1_index:1.3.0
             asset_digest: 72970e7edfd3226d2b28ce3086b84e51
             legacy_archive_digest: 155cba448b96c546260e6ace347ea3cd
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -1575,6 +1643,8 @@ genomes:
             asset_children: []
             asset_digest: bf892adc60046d4913559582254b1ed3
             legacy_archive_digest: 9297a2d8fd6e6148949cf5e5c7f024af
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -1593,6 +1663,8 @@ genomes:
             asset_size: 1022.4MB
             asset_children: []
             legacy_archive_digest: 5fd4fbd5ccaf68f4b077ae4654268b9c
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -1609,6 +1681,8 @@ genomes:
             asset_children: []
             asset_digest: 0a16b8a50e9dd90a0a484556d5aafe59
             legacy_archive_digest: 200ba838a93a6f48189cea49c769c2a8
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -1624,6 +1698,8 @@ genomes:
             asset_children: []
             asset_digest: f8b8cee3cfc688cc823fb46157d12d61
             legacy_archive_digest: 01f42a8b69e0799fc0835a1f9b7ae5ba
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -1642,6 +1718,8 @@ genomes:
             asset_size: 1.3GB
             asset_children: []
             legacy_archive_digest: fc07e0f023ac0ad7ebeebfc10fde3379
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   eaac6b1abf4044de7987a63f860d4a06b7fa5f2b7489545b:
     genome_description: The Bos Taurus (Btau_4.6.1) reference sequence from NCBI
     aliases: 
@@ -1693,6 +1771,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: 2196a9805e5fecf37c0567ef031d2fff
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       star_index:
         tags:
           2.7.3a:
@@ -1708,6 +1788,8 @@ genomes:
             asset_children: []
             asset_digest: ffcecdd5a3cd9425bbd79cb24de2dd42
             legacy_archive_digest: 66d0f06eaec04f11d20e6e2b5e36139b
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -1723,6 +1805,8 @@ genomes:
             asset_children: []
             asset_digest: aac5f2b67a6ef066652b87775bc930dd
             legacy_archive_digest: ffa4d4fe308be2758a263b1879d2428f
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bowtie2_index:
         tags:
           2.4.1:
@@ -1738,6 +1822,8 @@ genomes:
             asset_children: []
             asset_digest: 4977c7a734b085ae844f5a9894ed3f61
             legacy_archive_digest: b980d689a385d68e1b1c8fbb03be73df
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   fc1d5d064722bd2b324be0c76ccccdcce39b6416860cf42e:
     genome_description: The Caenorhabditis Elegans (ce6) reference sequence from UCSC
     aliases: 
@@ -1813,6 +1899,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: 97687c30b62d13d84b0164483e2f744d
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       bowtie1_index:
         tags:
           1.3.0:
@@ -1831,6 +1919,8 @@ genomes:
             asset_size: 111.6MB
             asset_children: []
             legacy_archive_digest: 2124a7729796afdf98fdaa5e867e5495
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -1850,6 +1940,8 @@ genomes:
             asset_size: 1.2MB
             asset_children: []
             legacy_archive_digest: 796d22a867a046c178a94cc4fd56fa2a
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -1868,6 +1960,8 @@ genomes:
             asset_size: 483.2MB
             asset_children: []
             legacy_archive_digest: 9eb588ec1ae0c53b02409e4550c070e7
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -1886,6 +1980,8 @@ genomes:
             asset_size: 144.6MB
             asset_children: []
             legacy_archive_digest: 50615fd21c7665ca71b2a7f6de379611
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -1904,6 +2000,8 @@ genomes:
             asset_size: 168.5MB
             asset_children: []
             legacy_archive_digest: f69cbb0cd60e38d42c7fa86ba0a46c93
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   b4cd78a3e8dc0ddc512102ca390a2b60b10b8f174079a9ca:
     genome_description: The Canis Familiaris (canFam2) reference sequence from UCSC
     aliases: 
@@ -1991,6 +2089,8 @@ genomes:
              - b4cd78a3e8dc0ddc512102ca390a2b60b10b8f174079a9ca/bowtie1_index:1.3.0
             asset_digest: d4583f66011bbb57b22efb6e588b10aa
             legacy_archive_digest: cbf4ccf678c65de98520c0b4c11db394
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       small_rna:
         tags:
           default:
@@ -2007,6 +2107,8 @@ genomes:
             asset_children: []
             asset_digest: c12b7e3b745b61fd13957cbe4225b4e9
             legacy_archive_digest: dff096bdab6fd190d9cf1793015bd2c8
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bowtie2_index:
         tags:
           2.4.1:
@@ -2025,6 +2127,8 @@ genomes:
             asset_size: 3.2GB
             asset_children: []
             legacy_archive_digest: 3b4a46111684e82cde86ae46bf28be16
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -2040,6 +2144,8 @@ genomes:
             asset_children: []
             asset_digest: b467ad607c4f84bdd3a1b955df8bd6ed
             legacy_archive_digest: 55d499ba38d1a76d34d54155354698ee
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   8d7249dda14dc887ce085d5eae5dc7bc445ac889b46f8560:
     genome_description: The Danio Rerio (danRer7) reference sequence from UCSC
     aliases: 
@@ -2081,6 +2187,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: bc91a790628792645536172e81e79f3f
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -2103,6 +2211,8 @@ genomes:
              - 8d7249dda14dc887ce085d5eae5dc7bc445ac889b46f8560/bowtie1_index:1.3.0
             asset_digest: a46d29a339e193de2177b92c0d72ea00
             legacy_archive_digest: 9d4d733fdeec09e7c20a7566e5234191
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -2118,6 +2228,8 @@ genomes:
             asset_children: []
             asset_digest: df8e0a8bc06f4b67824642b3f32c8562
             legacy_archive_digest: 3b856ae54d052bf31bf285c8e4695c90
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       small_rna:
         tags:
           default:
@@ -2137,6 +2249,8 @@ genomes:
             asset_size: 1.2MB
             asset_children: []
             legacy_archive_digest: 81a85a3b2526f4c2de1c12073ed435be
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -2152,6 +2266,8 @@ genomes:
             asset_children: []
             asset_digest: 931a70e63664d6368577f236bf3cc177
             legacy_archive_digest: 9ae33ded4e4645bf62bfbc7a373a9631
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -2167,6 +2283,8 @@ genomes:
             asset_children: []
             asset_digest: 8485e6d74918dfbfec9c0e22bdd19127
             legacy_archive_digest: 62512ba5a3f56a75fa9a756452d639d6
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -2182,6 +2300,8 @@ genomes:
             asset_children: []
             asset_digest: d776769e9d5715bf27ca73770e737cd2
             legacy_archive_digest: e0dac92b0bd79ef0ebf6118c2a80005a
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   c1c56f7bb7ac62a4fbf661b996fb565ddf2e38d7b170a7e3:
     genome_description: The Zea Mays (AGPv2) reference sequence from Ensembl
     aliases: 
@@ -2269,6 +2389,8 @@ genomes:
              - c1c56f7bb7ac62a4fbf661b996fb565ddf2e38d7b170a7e3/bowtie1_index:1.3.0
             asset_digest: 001fef8bee53db23ba73a0ab08fee911
             legacy_archive_digest: 6c1d30756cbfe91a3234fa768eeb02a7
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       small_rna:
         tags:
           default:
@@ -2285,6 +2407,8 @@ genomes:
             asset_children: []
             asset_digest: 87a5217732804dae1b733699e8924d54
             legacy_archive_digest: 7a3025e7aa85d9cb048826def712bb53
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -2300,6 +2424,8 @@ genomes:
             asset_children: []
             asset_digest: 1353560c524d43d2c65bbf7c5167a7d6
             legacy_archive_digest: 58017f3b8b5d749f57a0794b4acdfabc
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -2315,6 +2441,8 @@ genomes:
             asset_children: []
             asset_digest: 79bd8908151d6f64dece88b42993d3ea
             legacy_archive_digest: c25432f65199d2959ada09cddba275c6
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -2330,6 +2458,8 @@ genomes:
             asset_children: []
             asset_digest: 733814f04869ed3a54af9405a3fda11b
             legacy_archive_digest: b01811cfd18477484b955b39a26872d5
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770:
     genome_description: The Rattus Norvegicus (rn4) reference sequence from UCSC
     aliases: 
@@ -2444,6 +2574,8 @@ genomes:
             asset_children: []
             asset_digest: 70167e81e8f238ac98703ec8d624ca0f
             legacy_archive_digest: b79abf9aadf0d246fc3685d7bcce073c
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
   f51a9ecfb53259471cb46359deb09d6d7483c2a764f87da4:
     genome_description: The Homo Sapiens (build37.2) reference sequence from NCBI
     aliases: 
@@ -2528,6 +2660,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 9abb500f4f9b1c5c72147fb9bf22a714
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -2543,6 +2677,8 @@ genomes:
             asset_children: []
             asset_digest: af2211a1fd66fd4e8c2363b2aedc7aae
             legacy_archive_digest: 3dd463e082716a960547fabe2fdcd828
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -2558,6 +2694,8 @@ genomes:
             asset_children: []
             asset_digest: 4e5878a7c22889aefd7ee0070dc4da4e
             legacy_archive_digest: a14cee646485955b63507d90abd795ee
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   a921ef3f41460e938ef94834593249323a89e8fb429de4f4:
     genome_description: The Homo Sapiens (build36.3) reference sequence from NCBI
     aliases: 
@@ -2635,6 +2773,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: fc077e141922d6ff13b87fe3955fe833
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -2657,6 +2797,8 @@ genomes:
              - a921ef3f41460e938ef94834593249323a89e8fb429de4f4/bowtie1_index:1.3.0
             asset_digest: 4777571a141fa0a6d18392bb0982bc55
             legacy_archive_digest: 1f0ee6ceb49a507acd5f4f7e8bc09361
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -2672,6 +2814,8 @@ genomes:
             asset_children: []
             asset_digest: da75ae5f613fd11cfb4e62378a73acc4
             legacy_archive_digest: 90a670ea5a606b28be1005f92c49fc89
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bowtie2_index:
         tags:
           2.4.1:
@@ -2690,6 +2834,8 @@ genomes:
             asset_size: 3.8GB
             asset_children: []
             legacy_archive_digest: c25631e15da7bfbd046599d92b00c0c9
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   c3416a98c6ce89c0b506bb7cf9624c27494bcf19728d850c:
     genome_description: The Danio Rerio (danRer10) reference sequence from UCSC
     aliases: 
@@ -2738,6 +2884,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: a14da34903a1593ec6999e0808fbfe26
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -2763,6 +2911,8 @@ genomes:
             archive_size: 413.9MB
             asset_size: 1.3GB
             legacy_archive_digest: a43a1d6c156ebff009fbccc752d3f17c
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -2778,6 +2928,8 @@ genomes:
             asset_children: []
             asset_digest: 1877d6c7c5ef240caf3ebfd80d204b96
             legacy_archive_digest: f590987f6d280e71d02800e7928f63bd
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -2796,6 +2948,8 @@ genomes:
             asset_size: 1.3GB
             asset_children: []
             legacy_archive_digest: a4623e1c6b245adf0d0434e0d7c58f62
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -2814,6 +2968,8 @@ genomes:
             asset_size: 6.1GB
             asset_children: []
             legacy_archive_digest: 4edac6042d0109cdfdb5e6a5b3893d9a
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -2832,6 +2988,8 @@ genomes:
             asset_size: 1.8GB
             asset_children: []
             legacy_archive_digest: 691fdaa15abbe8853f89b206a1c9d16c
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -2850,6 +3008,8 @@ genomes:
             asset_size: 2.2GB
             asset_children: []
             legacy_archive_digest: 2eda54f0a4e4484d11bbcec3cbec255d
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   178d7d6f68c1c3e7528f778c772d462e69fc9cd7caea7a86:
     genome_description: The Bacillus Cereus Atcc 10987 (2004-02-13) reference sequence from NCBI
     aliases: 
@@ -2904,6 +3064,8 @@ genomes:
             archive_size: 1.6MB
             asset_size: 6.4MB
             legacy_archive_digest: a6aa322142e40c49a401c18da65ee64c
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -2922,6 +3084,8 @@ genomes:
             asset_size: 1.5GB
             asset_children: []
             legacy_archive_digest: 3da9a2f9015657dcdf9c0ad20af3d2d2
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -2940,6 +3104,8 @@ genomes:
             asset_size: 14.7MB
             asset_children: []
             legacy_archive_digest: acf3b96b8876f1c2e1942b07547b0ac6
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -2958,6 +3124,8 @@ genomes:
             asset_size: 42.3MB
             asset_children: []
             legacy_archive_digest: 99d61f81f91a933f2df2c07eb553e3d0
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -2976,6 +3144,8 @@ genomes:
             asset_size: 15.4MB
             asset_children: []
             legacy_archive_digest: e0eeec476af261d5a37da36bc8f27b1d
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -2994,6 +3164,8 @@ genomes:
             asset_size: 10.2MB
             asset_children: []
             legacy_archive_digest: e240f68612c41b954651e19e172d1261
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   a5e737c010f42ce1c326a71b3b63090b5d6b13e56058317a:
     genome_description: The Canis Familiaris (build2.1) reference sequence from NCBI
     aliases: 
@@ -3053,6 +3225,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 6444263f638bce4ad4e7db58d2b77215
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -3075,6 +3249,8 @@ genomes:
              - a5e737c010f42ce1c326a71b3b63090b5d6b13e56058317a/bowtie1_index:1.3.0
             asset_digest: 4564a191d9b7deee54eb36e24645a571
             legacy_archive_digest: a28ed15d8176cd53bdf49beaa1b9cb1c
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -3090,6 +3266,8 @@ genomes:
             asset_children: []
             asset_digest: d15815937ed0a16d46d519088141ce69
             legacy_archive_digest: 0dbbdc2ab91e1ddbacf3685aba67e098
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bowtie2_index:
         tags:
           2.4.1:
@@ -3108,6 +3286,8 @@ genomes:
             asset_size: 3.1GB
             asset_children: []
             legacy_archive_digest: 37809cd888205b7692d9e5a43c58b616
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   9400237ab90ddf710bde180f857292824114ced872efa1b8:
     genome_description: The Danio Rerio (GRCz10) reference sequence from Ensembl
     aliases: 
@@ -3195,6 +3375,8 @@ genomes:
              - 9400237ab90ddf710bde180f857292824114ced872efa1b8/bowtie1_index:1.3.0
             asset_digest: 5c6d1f352f66014f15063d628f6dcb69
             legacy_archive_digest: 1650cf8934b46d50adc3a1d6423bdbe5
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -3213,6 +3395,8 @@ genomes:
             asset_size: 1.3GB
             asset_children: []
             legacy_archive_digest: ecf51cf85a98e1e665e71ef3c4021822
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -3229,6 +3413,8 @@ genomes:
             asset_children: []
             asset_digest: 3b6718a9e5d2ffa785955e0136d28176
             legacy_archive_digest: ccf22220f3cf4241871dbcd53519fc10
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bowtie2_index:
         tags:
           2.4.1:
@@ -3244,6 +3430,8 @@ genomes:
             asset_children: []
             asset_digest: 93577f4918f3692cf200b45a3fa1b797
             legacy_archive_digest: c4a41e6faec3e9d41d6430e3e6fcb238
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   b80bcbb5ef9cd38eae8b60bdb42ee5e8ada0dca51c7dd80c:
     genome_description: The Drosophila Melanogaster (dm6) reference sequence from UCSC
     aliases: 
@@ -3334,6 +3522,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: 6c265491fea0806b7564c759666a633d
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -3359,6 +3549,8 @@ genomes:
             archive_size: 41.6MB
             asset_size: 134.9MB
             legacy_archive_digest: d0ecb11945471c6b3656c61e6a004a6c
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -3377,6 +3569,8 @@ genomes:
             asset_size: 2.6GB
             asset_children: []
             legacy_archive_digest: b577cd4bf161ded2268073970b98129e
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -3395,6 +3589,8 @@ genomes:
             asset_size: 148.1MB
             asset_children: []
             legacy_archive_digest: af049f293e970b393d2a9b99aa12b69c
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -3413,6 +3609,8 @@ genomes:
             asset_size: 655.2MB
             asset_children: []
             legacy_archive_digest: f8d793fccf294fa3cfb5faca6b4c92fd
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
   a0c819af21463db4408b067a8c3984e0188e206778ba79cc:
     genome_description: The Schizosaccharomyces Pombe (EF1) reference sequence from Ensembl
     aliases: 
@@ -3461,6 +3659,8 @@ genomes:
             archive_size: 3.7MB
             asset_size: 13.3MB
             legacy_archive_digest: 9e977ec376a5a685cc3a92f500daea83
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -3479,6 +3679,8 @@ genomes:
             asset_size: 1.6GB
             asset_children: []
             legacy_archive_digest: ebf5ed9ef0d04f71451b2f56d682ef24
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -3497,6 +3699,8 @@ genomes:
             asset_size: 22.0MB
             asset_children: []
             legacy_archive_digest: 83bc92e35cc1527e99e20b6c82be22a3
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -3515,6 +3719,8 @@ genomes:
             asset_size: 74.5MB
             asset_children: []
             legacy_archive_digest: c6600b62f72efb00761520f16b12754d
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -3533,6 +3739,8 @@ genomes:
             asset_size: 26.1MB
             asset_children: []
             legacy_archive_digest: 2626ada8347a8b8d8d1b7d22d4b34b17
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   2c7b4118332e4dd51a9a5ee3ec8c41dc13bdd234bf2a3882:
     genome_description: The Homo Sapiens (hg38) reference sequence from UCSC
     aliases: 
@@ -3653,6 +3861,8 @@ genomes:
             asset_children: []
             asset_digest: b70c96d729507df88290c53be2fcf909
             legacy_archive_digest: 951f022f47ba4eef744983cc424b0a02
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
   efbb9132b2c1b781e68298cf78f191a1fa44a23e769bad0e:
     genome_description: The Escherichia Coli K 12 Dh10B (EB1) reference sequence from Ensembl
     aliases: 
@@ -3677,7 +3887,7 @@ genomes:
             asset_digest: 9a53a9d6ad95cdbcd4e253ce4a73e12d
             legacy_archive_digest: 2fdbc510cf3ea68bc6606981875ad0d3
       abundant_sequences:
-        asset_description: Abundant sequences in the
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
         tags:
           default:
             asset_path: abundant_sequences
@@ -3695,6 +3905,7 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 609971097b7750a9fe574e5235967520
+        asset_class: abundant_sequences
       fasta:
         tags:
           samtools-1.10:
@@ -3717,6 +3928,8 @@ genomes:
              - efbb9132b2c1b781e68298cf78f191a1fa44a23e769bad0e/bowtie1_index:1.3.0
             asset_digest: 68a091b5124607f09bf0cda85fc2b18e
             legacy_archive_digest: 335d25218a3a5cf019a761a2e29e05f6
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -3735,6 +3948,8 @@ genomes:
             asset_size: 1.5GB
             asset_children: []
             legacy_archive_digest: 17fe1ab75257d85c6e20e1282ef92faa
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -3750,6 +3965,8 @@ genomes:
             asset_children: []
             asset_digest: d775670c0e92b27d32ba8dab96464f00
             legacy_archive_digest: e0f25d5ed57da5b05b9a2bd78e3374c4
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -3765,6 +3982,8 @@ genomes:
             asset_children: []
             asset_digest: 7139b94553f40ab88886572abea35483
             legacy_archive_digest: e50199a66a8e62af612490f07824aab3
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bwa_index:
         tags:
           0.7.17:
@@ -3780,6 +3999,8 @@ genomes:
             asset_children: []
             asset_digest: e6fd4d0bc7389777f2776ad30b9f8d32
             legacy_archive_digest: ca94cb545ea82ace250bdfe9954e045e
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   b44336bb5b5e0c01b7b578af2e67c761165e8054213c37a8:
     genome_description: The Rattus Norvegicus (Rnor_5.0) reference sequence from Ensembl
     aliases: 
@@ -3825,6 +4046,8 @@ genomes:
              - b44336bb5b5e0c01b7b578af2e67c761165e8054213c37a8/bowtie1_index:1.3.0
             asset_digest: 187408f38df66d64b7e78fe55fe44498
             legacy_archive_digest: 2ea1a2545961da5e5e75ecd84a0958e3
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -3840,6 +4063,8 @@ genomes:
             asset_children: []
             asset_digest: a269cf0ff35e92358ef813644c00bd0c
             legacy_archive_digest: 33ff670252882e8475bf95b389a9b5b2
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -3855,6 +4080,8 @@ genomes:
             asset_children: []
             asset_digest: 39b6873279cca66b478236031af43219
             legacy_archive_digest: 01740ac0e9ea9f8479dafa27ac43c2d6
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -3870,6 +4097,8 @@ genomes:
             asset_children: []
             asset_digest: d07a072845586393e4d43f08e313bb26
             legacy_archive_digest: 1e8ac849f4c946d166067229a595adb6
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   443c763a34b124ad963f91014b62d7dea19ebd27df0d1278:
     genome_description: The Mus Musculus (mm10) reference sequence from UCSC
     aliases: 
@@ -3948,6 +4177,8 @@ genomes:
             asset_children: []
             asset_digest: 725ebf3bd4185744e2d5e36bf6570f51
             legacy_archive_digest: acd97ebaf894d46f785a0d3ea06a6832
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -3963,6 +4194,8 @@ genomes:
             asset_children: []
             asset_digest: 1276f5f1c3cd8d6b893e759dae777bdf
             legacy_archive_digest: 3e9ef708f33fd44334a064924ea2e0f5
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -3978,6 +4211,8 @@ genomes:
             asset_children: []
             asset_digest: 0ca8eb1fcd11e477d3a45a9bdab519e8
             legacy_archive_digest: 6f9ab360d53dee00850a445aefdc962b
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -3993,6 +4228,8 @@ genomes:
             asset_children: []
             asset_digest: a23b8d17391b113a32f15f2d6c61075c
             legacy_archive_digest: 2d4e747536a848462af5dd424ba845e4
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710:
     genome_description: The Caenorhabditis Elegans (WS190) reference sequence from NCBI
     aliases: 
@@ -4034,6 +4271,8 @@ genomes:
             asset_children: []
             asset_digest: 02518288e2ceb78957940b696770eab7
             legacy_archive_digest: 6043a8a2bbce14ae445f9c75c2e415b0
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -4049,6 +4288,8 @@ genomes:
             asset_children: []
             asset_digest: fc7ff347ea2236827e0e23fa92bd9b83
             legacy_archive_digest: 3d67d58e4fd122bf3196540299cc1dd7
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -4065,6 +4306,8 @@ genomes:
             asset_children: []
             asset_digest: aa5438f564f3ca0c396551da55d49d84
             legacy_archive_digest: 87775fe8ac2eaee3aa4c46b91f4d5ace
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -4083,6 +4326,8 @@ genomes:
             asset_size: 480.9MB
             asset_children: []
             legacy_archive_digest: d782688ce40f524ac46e3d331af3fe4c
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -4098,6 +4343,8 @@ genomes:
             asset_children: []
             asset_digest: 9296e4de3ef5d86a987b795c082ebdf6
             legacy_archive_digest: ab51a6c50a92ca0e73493532918a1884
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -4113,6 +4360,8 @@ genomes:
             asset_children: []
             asset_digest: 3c98885501427fedbd7edd746b77ac47
             legacy_archive_digest: 328c2d9025a1fe069e7f8765797bfe8b
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b:
     genome_description: The Homo Sapiens (GRCh38Decoy) reference sequence from NCBI
     aliases: 
@@ -4209,6 +4458,8 @@ genomes:
             asset_children: []
             asset_digest: a32a26a682570fd45db5c047f6efcea1
             legacy_archive_digest: 9eb3f03936bbf61b02c609968a2eff0b
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   bf08592a8d52ac581557176757c1cff118345ff18ee80927:
     genome_description: The Rattus Norvegicus (RGSC_v3.4) reference sequence from NCBI
     aliases: 
@@ -4329,6 +4580,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 20c7407ba39fcdc5fab0e405bb0c3207
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       bowtie1_index:
         tags:
           1.3.0:
@@ -4344,6 +4597,8 @@ genomes:
             asset_children: []
             asset_digest: f5edabda611889bca30d6b43e46212af
             legacy_archive_digest: c51e28798e60c1b9d8c6a1b4a7e9a171
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
   db6d7911594e2ca6bb2f834cf080c3131b390d7cf42e4fae:
     genome_description: The Homo Sapiens (GRCh37) reference sequence from Ensembl
     aliases: 
@@ -4406,6 +4661,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: 5fa0348613616e084313c03d25f2f15a
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -4428,6 +4685,8 @@ genomes:
              - db6d7911594e2ca6bb2f834cf080c3131b390d7cf42e4fae/bowtie1_index:1.3.0
             asset_digest: 61d3a4546dfd2169aa819ac49a2f3429
             legacy_archive_digest: 8b2ec51dbe4dbbc3dcbed2a18c1c6575
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -4443,6 +4702,8 @@ genomes:
             asset_children: []
             asset_digest: 2ba7e0e1e1faef997cc3b47e53d430ec
             legacy_archive_digest: 0ec83c6e6d9888f23a9e209d49d12f5c
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -4458,6 +4719,8 @@ genomes:
             asset_children: []
             asset_digest: e3dd2adcd3aee167840ec81722dbe250
             legacy_archive_digest: ac599926201246502a28cfb11bdd4394
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -4477,6 +4740,8 @@ genomes:
             asset_size: 1.6MB
             asset_children: []
             legacy_archive_digest: 776e3244d1a03d5b4753071a613e5545
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bwa_index:
         tags:
           0.7.17:
@@ -4492,6 +4757,8 @@ genomes:
             asset_children: []
             asset_digest: e2c39d5e587ae12063fc5ebd77b83585
             legacy_archive_digest: f9af181f03374e6143a3217d03845228
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   071c521f8c54bc8c9da3c2108aee7b45897ae2aa8cbead23:
     genome_description: The Oryza Sativa Japonica (IRGSP-1.0) reference sequence from Ensembl
     aliases: 
@@ -4576,6 +4843,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 3435c7b2aed5e4d6eea0ea9010e3a5da
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       star_index:
         tags:
           2.7.3a:
@@ -4591,6 +4860,8 @@ genomes:
             asset_children: []
             asset_digest: 33ad648e96cca129a06b1489a223b616
             legacy_archive_digest: cf2d3ff100b69bc4bbf2bf509d154a75
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -4606,6 +4877,8 @@ genomes:
             asset_children: []
             asset_digest: 57b0618e7af7afa1fecbdf356f91e13f
             legacy_archive_digest: b17f6e97d38571864ea8d70b275ae940
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bwa_index:
         tags:
           0.7.17:
@@ -4621,6 +4894,8 @@ genomes:
             asset_children: []
             asset_digest: ddaf117004386a10fda5729936a2279e
             legacy_archive_digest: 4624f01d7a0aaed675a55f1669c62c2f
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   e740da98fc6e6bec46fd8d10f9cec2823f049543c5b6ba82:
     genome_description: The Rattus Norvegicus (Rnor_6.0) reference sequence from NCBI
     aliases: 
@@ -4662,6 +4937,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 63454c383d397e0baa13d839819bd2e1
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -4684,6 +4961,8 @@ genomes:
              - e740da98fc6e6bec46fd8d10f9cec2823f049543c5b6ba82/bowtie1_index:1.3.0
             asset_digest: 45c1a6c25b25fdcc5156fe5797dda9fe
             legacy_archive_digest: c2e27ffcb45752030d025e69cf82c935
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -4699,6 +4978,8 @@ genomes:
             asset_children: []
             asset_digest: 22abd46764e9b9716e7414d087153b68
             legacy_archive_digest: 1392a9b27e556e2cddc4c5a425ba5ae4
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -4714,6 +4995,8 @@ genomes:
             asset_children: []
             asset_digest: 29ac43e21e57e7b843f3009e07d4e38a
             legacy_archive_digest: a78c5df3f7c4f3d1dea019e52665600b
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bowtie2_index:
         tags:
           2.4.1:
@@ -4729,6 +5012,8 @@ genomes:
             asset_children: []
             asset_digest: bb9f9b709df8802f505fc430419d01e2
             legacy_archive_digest: bf59268194cf49438455c49a3fe06762
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -4747,6 +5032,8 @@ genomes:
             asset_size: 4.5GB
             asset_children: []
             legacy_archive_digest: c86f0fdc96cec8c0e4abb5b9a1791b59
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   e0b9518822024257ba12dd178946bc2a2a809dd0887c2837:
     genome_description: The Gallus Gallus (build3.1) reference sequence from NCBI
     aliases: 
@@ -4972,6 +5259,8 @@ genomes:
              - 13888a456d792ba17df3a2c982b22d480a23d7daa7fc17fb/bowtie1_index:1.3.0
             asset_digest: 536ff739cbe9a2dccbd37b2d52706874
             legacy_archive_digest: ae073f7243c5108b2523c74e6de7b28f
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
   bee2787505cb26227b14431842a71fd8cec0ad48240e2a99:
     genome_description: The Pan Troglodytes (panTro4) reference sequence from UCSC
     aliases: 
@@ -5013,6 +5302,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 818b29183e3b18f52c8bb6ba586a6d16
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -5035,6 +5326,8 @@ genomes:
              - bee2787505cb26227b14431842a71fd8cec0ad48240e2a99/bowtie1_index:1.3.0
             asset_digest: 0b0027ae57924300da48c5c9916bf3d7
             legacy_archive_digest: b3cf0509fe0aff478c04f40aedc23289
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -5050,6 +5343,8 @@ genomes:
             asset_children: []
             asset_digest: 83adb455b6dd92b1819f8878c0ed7e78
             legacy_archive_digest: bdd9029f1cc754a5ed8f70303c7ee847
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -5066,6 +5361,8 @@ genomes:
             asset_children: []
             asset_digest: 36f0a93439a9c81573c102fa74c58ab1
             legacy_archive_digest: 107d1d8b098fdfa2f26619f0dd9e1561
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -5081,6 +5378,8 @@ genomes:
             asset_children: []
             asset_digest: 57fefa016f3d2b9ab5bf040a1ad84e1a
             legacy_archive_digest: 09b95d20e5d5876ae7fd6697730bd607
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bwa_index:
         tags:
           0.7.17:
@@ -5096,6 +5395,8 @@ genomes:
             asset_children: []
             asset_digest: f642005073910101d4989def8f7fa631
             legacy_archive_digest: 121993532effbc47515cbdc05be642b9
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   9016c29a1501691e03313aafc86881e6d554704d9b838c28:
     genome_description: The Saccharomyces Cerevisiae (EF4) reference sequence from Ensembl
     aliases: 
@@ -5189,6 +5490,8 @@ genomes:
             archive_size: 3.6MB
             asset_size: 11.8MB
             legacy_archive_digest: 5f04959598f7b3ed9239541e1e6ed021
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -5207,6 +5510,8 @@ genomes:
             asset_size: 20.5MB
             asset_children: []
             legacy_archive_digest: f21f42e742114b856c56f3d07fe36e36
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bowtie2_index:
         tags:
           2.4.1:
@@ -5222,6 +5527,8 @@ genomes:
             asset_children: []
             asset_digest: ef6739819e74fb97989f9d32c53e723a
             legacy_archive_digest: 87546d1fba3c4a582ceb635eeb2642cd
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -5237,6 +5544,8 @@ genomes:
             asset_children: []
             asset_digest: 828ba1ce202c1cf294143830a35b8441
             legacy_archive_digest: 9d54478e9b7f0e567cc258223331ac98
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   ecf41e5a60fd8217c8447a8fcfabf68b9feb9bc9cc672e44:
     genome_description: The Sorangium Cellulosum So Ce 56 (2007-11-27) reference sequence from NCBI
     aliases: 
@@ -5296,6 +5605,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: aa9ca35e725506065ab98849906fad95
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -5318,6 +5629,8 @@ genomes:
              - ecf41e5a60fd8217c8447a8fcfabf68b9feb9bc9cc672e44/bowtie1_index:1.3.0
             asset_digest: 375aa4fac5df3dc31587ad5e3e5994ef
             legacy_archive_digest: bbbbcd8ad1470db1bfe9e7d2ad9bba40
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -5333,6 +5646,8 @@ genomes:
             asset_children: []
             asset_digest: e23635cf0642b9321d83429d87db1be3
             legacy_archive_digest: 7a81f5df5f45ea28a733381e6d9507b1
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -5348,6 +5663,8 @@ genomes:
             asset_children: []
             asset_digest: 7fdcd1d10538e1fd70582e41047e7cc2
             legacy_archive_digest: efecec6c749046fd966457bcb316f5ce
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -5363,6 +5680,8 @@ genomes:
             asset_children: []
             asset_digest: 40da96bd159de3ecdd45e14f044f82e7
             legacy_archive_digest: 463f8e0aaa188320d3dc061ed989d551
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
   f0f0472cf8851887f251b4eb210f47136bcbdde38d6220f3:
     genome_description: The Gallus Gallus (galGal3) reference sequence from UCSC
     aliases: 
@@ -5502,6 +5821,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 67ebc048cfcefda17b0f49b598eae7c8
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       star_index:
         tags:
           2.7.3a:
@@ -5517,6 +5838,8 @@ genomes:
             asset_children: []
             asset_digest: d78f32ab12fc867d17d456a74cbba655
             legacy_archive_digest: c530757b9da1cbf5377d7fd9bf0afa8b
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
   ff95f3ae9f8df6afd7a0f0323ba8fd918f451ca1ca5ca0c1:
     genome_description: The Gallus Gallus (build2.1) reference sequence from NCBI
     aliases: 
@@ -5558,6 +5881,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: b1704ac277646b7fa56239623f0e39bf
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -5580,6 +5905,8 @@ genomes:
              - ff95f3ae9f8df6afd7a0f0323ba8fd918f451ca1ca5ca0c1/bowtie1_index:1.3.0
             asset_digest: 2d691aa9afd48cfc11fb100862f283df
             legacy_archive_digest: 86c9ea37775f4ae7978ae6cd7eda8f61
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -5595,6 +5922,8 @@ genomes:
             asset_children: []
             asset_digest: 4ba94236118c465f13db0319186ed192
             legacy_archive_digest: a24caf06df177dbeb019a7749193239a
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -5610,6 +5939,8 @@ genomes:
             asset_children: []
             asset_digest: 3042952b8b7efae7659f98585f5152e3
             legacy_archive_digest: 9aab98605f9a32aa9d2455665348e59b
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -5625,6 +5956,8 @@ genomes:
             asset_children: []
             asset_digest: d6a150fdcc49ff88f9167128f34500e6
             legacy_archive_digest: 34fa94dc3106b1f500571227e107efe0
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   8b7b25fb39e466da501046c2479acdce954ccceb1e3408c5:
     genome_description: The Sus Scrofa (Sscrofa10) reference sequence from NCBI
     aliases: 
@@ -5684,6 +6017,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 863734a31c1f0ad191f95b6b034b1d4e
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -5706,6 +6041,8 @@ genomes:
              - 8b7b25fb39e466da501046c2479acdce954ccceb1e3408c5/bowtie1_index:1.3.0
             asset_digest: aa6b5de48e879f4d56219573be2b0934
             legacy_archive_digest: f3e9c2c3f33dfca09b639e924b30fc08
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       small_rna:
         tags:
           default:
@@ -5725,6 +6062,8 @@ genomes:
             asset_size: 87.9KB
             asset_children: []
             legacy_archive_digest: ca91420f9400e6dcd66c5c88e8454a1a
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bowtie2_index:
         tags:
           2.4.1:
@@ -5740,6 +6079,8 @@ genomes:
             asset_children: []
             asset_digest: 51e632558298de80502d69834f725cc8
             legacy_archive_digest: 90e5dd66eb2984808be8bdebcedce8e0
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -5755,6 +6096,8 @@ genomes:
             asset_children: []
             asset_digest: c45a900e961f81552e484e731e92df7f
             legacy_archive_digest: bf56c0d5d299dd4930affdcbad21a02a
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   783925fd90b4b58a00a12b7d03a4cd1654e117bffd01c4db:
     genome_description: The Phix (1993-04-28) reference sequence from NCBI
     aliases: 
@@ -5836,6 +6179,8 @@ genomes:
             asset_children: []
             asset_digest: 53451bc4330651ea78d2975bd0a16689
             legacy_archive_digest: 8da3e80de2adb171444546df7fa32665
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -5851,6 +6196,8 @@ genomes:
             asset_children: []
             asset_digest: eb4b0db69c2f8fd76e3cffd583c512fe
             legacy_archive_digest: afa52c16b6433a7978caa47452989a57
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -5866,6 +6213,8 @@ genomes:
             asset_children: []
             asset_digest: 379ae8636aae2b26af7506780d6ad8a6
             legacy_archive_digest: b7d7458b486a5253a970c05663df5524
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   0d2e9865673f3eaf02789c5bc1a14a99f60b4ddd6b12b8ec:
     genome_description: The Mus Musculus (GRCm38) reference sequence from Ensembl
     aliases: 
@@ -5907,6 +6256,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 968be3ee857147a889ac9349a979d1a8
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -5929,6 +6280,8 @@ genomes:
              - 0d2e9865673f3eaf02789c5bc1a14a99f60b4ddd6b12b8ec/bowtie1_index:1.3.0
             asset_digest: e8ac77448bceb1df08370d221c1bbdf6
             legacy_archive_digest: d534517da7af63e19cdd6b9eca5cb666
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       small_rna:
         tags:
           default:
@@ -5945,6 +6298,8 @@ genomes:
             asset_children: []
             asset_digest: 725ebf3bd4185744e2d5e36bf6570f51
             legacy_archive_digest: 2dcd5f0202922bde9154ea1cc2651327
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -5960,6 +6315,8 @@ genomes:
             asset_children: []
             asset_digest: 198893ce198c030b1ec4b73b8c5d18cc
             legacy_archive_digest: 98c8e0bbbef1f2a5405e0c7041a093d3
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -5975,6 +6332,8 @@ genomes:
             asset_children: []
             asset_digest: 52f763ce2fd8de0361542050a936f83c
             legacy_archive_digest: eee4a2daf69c69d0e3abbde44f28a9bc
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   a6636fc43b527471e52c99e704eb3532c0ad46c024e42a78:
     genome_description: The Rattus Norvegicus (rn5) reference sequence from UCSC
     aliases: 
@@ -6021,6 +6380,8 @@ genomes:
              - a6636fc43b527471e52c99e704eb3532c0ad46c024e42a78/bowtie1_index:1.3.0
             asset_digest: e8d61541b369209ce67ab2a0aab6d169
             legacy_archive_digest: 360b73836adf117a1c6221ba78f1ca67
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -6036,6 +6397,8 @@ genomes:
             asset_children: []
             asset_digest: a2d0f926894425ace401bde216a60d1b
             legacy_archive_digest: b4a52eb639aa135e807f7edfc77af333
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -6051,6 +6414,8 @@ genomes:
             asset_children: []
             asset_digest: 05af03890fdd5c7fd590a60a9fa7d9bc
             legacy_archive_digest: a4642c3eeef7a2595c7ceaa3045c27b6
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bowtie2_index:
         tags:
           2.4.1:
@@ -6066,6 +6431,8 @@ genomes:
             asset_children: []
             asset_digest: 03680261ce1f98861ae0785f44b4dd0d
             legacy_archive_digest: 32059985affae554d02943c91fc5c9c8
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -6081,6 +6448,8 @@ genomes:
             asset_children: []
             asset_digest: abb7f7132b3d373b173da25b70ad7915
             legacy_archive_digest: f9052b032160642ce3fc405eb08f86bd
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   cc750cc84321ef406148bffe0da80fc5077b690b7150272a:
     genome_description: The Rattus Norvegicus (rn6) reference sequence from UCSC
     aliases: 
@@ -6325,6 +6694,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 2bf82e8edf3d6234ff906c33668c2e7c
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       star_index:
         tags:
           2.7.3a:
@@ -6340,6 +6711,8 @@ genomes:
             asset_children: []
             asset_digest: ca58b8d90c75d8d29b6c0d8649ed9304
             legacy_archive_digest: 474f30ab5a926bec5f146907f578e74f
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
   059d8eb13b5a40a4cf4d9044cd0d08456c806ce07c69a3ba:
     genome_description: The Sus Scrofa (susScr2) reference sequence from UCSC
     aliases: 
@@ -6620,6 +6993,8 @@ genomes:
              - f60913bcaf2d7cdef6205a79215300a76ae35c1dd1ba358e/bowtie1_index:1.3.0
             asset_digest: 4eea18f5a21dc4b2b791ac3d7b17783b
             legacy_archive_digest: ade7708b9854b486c6bc21c3100d9ffd
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
   a3183174863fa017824f12de47903725421b933f7ae8dd68:
     genome_description: The Sus Scrofa (susScr3) reference sequence from UCSC
     aliases: 
@@ -6777,6 +7152,8 @@ genomes:
             asset_children: []
             asset_digest: 43116dd69eca1a5320ec487cce01e612
             legacy_archive_digest: c952e09f91a16755efadd022d24d8c7b
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   b6ca4dbde5d00b42d64330037d2be2536895d49928412710:
     genome_description: The Macaca Mulatta (Mmul_1) reference sequence from Ensembl
     aliases: 
@@ -6915,6 +7292,8 @@ genomes:
             asset_children: []
             asset_digest: 6a79452e6baf77655c6d59d556a4a216
             legacy_archive_digest: c7e0dddcf94d403bd121046b6ea272e6
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   f2b9d98bed7e4e6c98f863ed33acfb00201b2a48b07d0b7a:
     genome_description: The Pan Troglodytes (panTro3) reference sequence from UCSC
     aliases: 
@@ -7000,6 +7379,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: e40165a4c3d5b4e370f5c16829b6c867
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -7015,6 +7396,8 @@ genomes:
             asset_children: []
             asset_digest: ffddd3945c9b5eeda8698ae467788711
             legacy_archive_digest: 648fdc84baa8196728155d45e8553373
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -7030,6 +7413,8 @@ genomes:
             asset_children: []
             asset_digest: 4a1b1ca399c1e0826ed2496a41d94c07
             legacy_archive_digest: 3fce301f54bac1d67403202d404375b9
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -7045,6 +7430,8 @@ genomes:
             asset_children: []
             asset_digest: e24dcdbe1c64e450dc923e9bd5db02ed
             legacy_archive_digest: 2eb13263a2149e96042b9baaaee40b39
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   ff630c354340cf72b8a48a7704e8ae9f87868122d8df0ac8:
     genome_description: The Zea Mays (AGPv3) reference sequence from Ensembl
     aliases: 
@@ -7147,6 +7534,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: e35cc99c818e719e4ecd22aeb6de89e4
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       small_rna:
         tags:
           default:
@@ -7163,6 +7552,8 @@ genomes:
             asset_children: []
             asset_digest: 87a5217732804dae1b733699e8924d54
             legacy_archive_digest: cdd796f03cc17984d5c8dceb4b5a29d3
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
   e3d1f95ed952f301505b595ac81e6f05acff44a8e0955ed8:
     genome_description: The Homo Sapiens (build37.1) reference sequence from NCBI
     aliases: 
@@ -7283,6 +7674,8 @@ genomes:
             asset_children: []
             asset_digest: 99257a3f670c4b4d924dbb28e4ec0c02
             legacy_archive_digest: c5f1a41d6e230652bf874ab2aaccb1f9
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -7298,6 +7691,8 @@ genomes:
             asset_children: []
             asset_digest: d077f542aaeb23bf638e96037b347ab9
             legacy_archive_digest: 53b1196921180c274c5d5f8f9e1d8048
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
   4d985797b976e420c2896d7d1c7e36f0086942c32cc0ea17:
     genome_description: The Sus Scrofa (Sscrofa9) reference sequence from Ensembl
     aliases: 
@@ -7401,6 +7796,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: feb7c9748a1be9c7530f61e74f9b7ab5
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       star_index:
         tags:
           2.7.3a:
@@ -7416,6 +7813,8 @@ genomes:
             asset_children: []
             asset_digest: e0eac7508b23b5488bb60969ed519988
             legacy_archive_digest: 31b7e4cf9332e8c593e50f0503c95e97
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -7431,6 +7830,8 @@ genomes:
             asset_children: []
             asset_digest: 2bbd80927a9c0175236e00b076d826ae
             legacy_archive_digest: f8932edd6ee98e29d0893a94fb2a631e
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
   7289dc4a73bf8223f437aba8a9aff6d97371ea26d7d6ce68:
     genome_description: The Oryza Sativa Japonica (MSU6) reference sequence from Ensembl
     aliases: 
@@ -7515,6 +7916,8 @@ genomes:
              - 7289dc4a73bf8223f437aba8a9aff6d97371ea26d7d6ce68/bowtie1_index:1.3.0
             asset_digest: aade6bf11844e503f669869917cc3dea
             legacy_archive_digest: 70014876c3a375aa7ea90d8f7d09c9b6
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       small_rna:
         tags:
           default:
@@ -7531,6 +7934,8 @@ genomes:
             asset_children: []
             asset_digest: 7a0cd7daecb35e804bcee1f156e459a6
             legacy_archive_digest: 003a03582424322e0f345281cb20a006
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -7546,6 +7951,8 @@ genomes:
             asset_children: []
             asset_digest: 9ccb47bcf8bb30b887c21e9234b3eb57
             legacy_archive_digest: 7fc2d2a58399f28fc95d8bcb8fe0bb6c
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -7561,6 +7968,8 @@ genomes:
             asset_children: []
             asset_digest: 996feb1e1ddc0ee28d62fdc4f9cb77e6
             legacy_archive_digest: 7f756e1fd43a770be87036d7fe439a77
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   e36f1b11c1fbe6d0b6498ae872fee2bd90a8e173febc8e63:
     genome_description: The Sus Scrofa (Sscrofa9.2) reference sequence from NCBI
     aliases: 
@@ -7602,6 +8011,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: 203ba013b255e4f1f0d01978fb27a9f5
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -7624,6 +8035,8 @@ genomes:
              - e36f1b11c1fbe6d0b6498ae872fee2bd90a8e173febc8e63/bowtie1_index:1.3.0
             asset_digest: 0d6158c0cf312038eb142ed360c70599
             legacy_archive_digest: 2019667766c74246052a2a64eeab09b4
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -7639,6 +8052,8 @@ genomes:
             asset_children: []
             asset_digest: a47bea611fe5fc2b6423a5f82180beac
             legacy_archive_digest: f8beb16b8225e2f90de7fc0063141b96
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -7654,6 +8069,8 @@ genomes:
             asset_children: []
             asset_digest: c64c09f110ff38782495906aa5b72ac6
             legacy_archive_digest: 6d8da447e74255c07362b0b88c51d60e
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -7669,6 +8086,8 @@ genomes:
             asset_children: []
             asset_digest: 635061406d3cf0a0209f0e37d73089c8
             legacy_archive_digest: dde27bc516da12d90dd57645a3732fe3
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -7684,6 +8103,8 @@ genomes:
             asset_children: []
             asset_digest: d0c7c16ffd1f6356fab33409e4b7a648
             legacy_archive_digest: 7ca366125b826ff642141ed494b54c98
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   251d26e65968f0164314dc5510210ba96e90ecb2b84813dd:
     genome_description: The Caenorhabditis Elegans (WBcel215) reference sequence from Ensembl
     aliases: 
@@ -7710,6 +8131,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: 9d23f43907429f76165c633dab967b04
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       star_index:
         tags:
           2.7.3a:
@@ -7728,6 +8151,8 @@ genomes:
             asset_size: 2.3GB
             asset_children: []
             legacy_archive_digest: e71ec1a4b8eec46ac7cc78d080030e91
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -7746,6 +8171,8 @@ genomes:
             asset_size: 110.5MB
             asset_children: []
             legacy_archive_digest: 786def9269c395f2be17306e7cdac0eb
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -7765,6 +8192,8 @@ genomes:
             asset_size: 81.6KB
             asset_children: []
             legacy_archive_digest: b40a7235d75a276da4cd4b474ce159db
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -7783,6 +8212,8 @@ genomes:
             asset_size: 482.6MB
             asset_children: []
             legacy_archive_digest: 302cac5aaa3c77285decca9ca9755bae
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -7801,6 +8232,8 @@ genomes:
             asset_size: 143.5MB
             asset_children: []
             legacy_archive_digest: a06771817c35956a9f01c8aa0d55bf2f
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -7819,6 +8252,8 @@ genomes:
             asset_size: 168.5MB
             asset_children: []
             legacy_archive_digest: 048ed02c5b14242e785b012330eafc5b
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   23065fdd9d285f60ec8a674425355d40c0d17dd182b5deb8:
     genome_description: The Canis Familiaris (build3.1) reference sequence from NCBI
     aliases: 
@@ -7845,6 +8280,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: afaa439dd267157528f57c56d6d07890
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -7867,6 +8304,8 @@ genomes:
              - 23065fdd9d285f60ec8a674425355d40c0d17dd182b5deb8/bowtie1_index:1.3.0
             asset_digest: f48dc2a74e6b0c93894d5e37e44deb45
             legacy_archive_digest: 17f4d06588f7db77b4d4d397d5c4b1f8
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -7885,6 +8324,8 @@ genomes:
             asset_size: 2.3GB
             asset_children: []
             legacy_archive_digest: 6d0d84f31d5d51077bdec5a44c986482
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -7900,6 +8341,8 @@ genomes:
             asset_children: []
             asset_digest: 5c7efaeea8cb63c063b89a7b4cd9be75
             legacy_archive_digest: 5b519895f1ea67abb958e3ed51041d48
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -7918,6 +8361,8 @@ genomes:
             asset_size: 3.1GB
             asset_children: []
             legacy_archive_digest: 701ab16c1f266ad3936d5ecdd2df4905
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -7936,6 +8381,8 @@ genomes:
             asset_size: 3.8GB
             asset_children: []
             legacy_archive_digest: f3a5d91b136ba091bae83b9a97d9bd5b
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   582c40ed5107a24df0bc354f6310c1a3f84eba6eb6ee3382:
     genome_description: The Saccharomyces Cerevisiae (EF2) reference sequence from Ensembl
     aliases: 
@@ -7959,6 +8406,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: eec206765fd895b62a2482555fa0591b
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -7981,6 +8430,8 @@ genomes:
              - 582c40ed5107a24df0bc354f6310c1a3f84eba6eb6ee3382/bowtie1_index:1.3.0
             asset_digest: f45278f1447e760272b31de4d942baf2
             legacy_archive_digest: 0abafb5b6fa2337bee69348f8f983a9b
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -7996,6 +8447,8 @@ genomes:
             asset_children: []
             asset_digest: 4dbfd52d22bf47ed87a56785bef01e51
             legacy_archive_digest: cfaf1694148121283296262a6fc6f545
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -8014,6 +8467,8 @@ genomes:
             asset_size: 21.6MB
             asset_children: []
             legacy_archive_digest: 69ecfda373548ed2de110add025a95fc
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -8029,6 +8484,8 @@ genomes:
             asset_children: []
             asset_digest: a717080bb521891cb63caf5bfaf3aac0
             legacy_archive_digest: 7d0b09f8708735ef80293e35fda994ae
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -8044,6 +8501,8 @@ genomes:
             asset_children: []
             asset_digest: 90d17b3ede7b4a3c7c28caa5c3814a4b
             legacy_archive_digest: d2b4e8539bad60f3ab9540519ba3e8f4
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -8059,6 +8518,8 @@ genomes:
             asset_children: []
             asset_digest: 631cebb39f6454cccea6bce6a770be60
             legacy_archive_digest: 79728b4b537c21b6b72b05e50fcec166
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   c97e8a918bfa1997612fbe3925228b18ef2726be203f04f3:
     genome_description: The Canis Familiaris (BROADD2) reference sequence from Ensembl
     aliases: 
@@ -8085,6 +8546,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: 6ff4d5d8dd6870bdf98f3f4423a3961f
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -8110,6 +8573,8 @@ genomes:
             archive_size: 691.4MB
             asset_size: 2.4GB
             legacy_archive_digest: ba59d64eb865b8ee8de83a97bd56587d
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -8128,6 +8593,8 @@ genomes:
             asset_size: 2.4GB
             asset_children: []
             legacy_archive_digest: bfe3262d33494ef7ed3e9bbf8acec30c
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -8147,6 +8614,8 @@ genomes:
             asset_size: 1.2MB
             asset_children: []
             legacy_archive_digest: d9e472e1fa6f0c94c68813050437f254
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -8162,6 +8631,8 @@ genomes:
             asset_children: []
             asset_digest: 1d489bf0018f47a9e6b30cfb900684a8
             legacy_archive_digest: aa23f322c31ce0e2adf5d5286d50d19a
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -8180,6 +8651,8 @@ genomes:
             asset_size: 3.2GB
             asset_children: []
             legacy_archive_digest: df1aeee779c911cd45e7f5b884ad2318
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -8198,6 +8671,8 @@ genomes:
             asset_size: 4.1GB
             asset_children: []
             legacy_archive_digest: cde5a186b1390723cd083caa62d67ba5
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   3d42ad3323e23b478afede1f18ed387953a9790a15228328:
     genome_description: The Canis Familiaris (canFam3) reference sequence from UCSC
     aliases: 
@@ -8224,6 +8699,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: fdad290f3e354311c561503635288d4e
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -8249,6 +8726,8 @@ genomes:
             archive_size: 728.3MB
             asset_size: 2.2GB
             legacy_archive_digest: a8a3ccf8b6d896c4ed91759f5fe3d08b
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -8264,6 +8743,8 @@ genomes:
             asset_children: []
             asset_digest: 50702528961ac721ecd4f71421f941ec
             legacy_archive_digest: b0cd2bfa05ec2bd6694dbc4ca5e444ca
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -8282,6 +8763,8 @@ genomes:
             asset_size: 2.3GB
             asset_children: []
             legacy_archive_digest: a28f4583435682dc15dc1f441d2ea076
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -8301,6 +8784,8 @@ genomes:
             asset_size: 1.2MB
             asset_children: []
             legacy_archive_digest: e7b5a57b3186223e39a743a7edfaa0a9
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -8319,6 +8804,8 @@ genomes:
             asset_size: 10.6GB
             asset_children: []
             legacy_archive_digest: f16fac45d69de1240483771ac85e68fe
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -8337,6 +8824,8 @@ genomes:
             asset_size: 3.1GB
             asset_children: []
             legacy_archive_digest: 3359289a832b2f92dcce196f6b194f02
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -8355,6 +8844,8 @@ genomes:
             asset_size: 3.8GB
             asset_children: []
             legacy_archive_digest: 37529ba60a7e8cd089fb3a382c848f65
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   2828cd20a59fecfeaa34f4baa97150c4e05b133c1a8eff2a:
     genome_description: The Escherichia Coli K 12 Mg1655 (2001-10-15) reference sequence from NCBI
     aliases: 
@@ -8381,6 +8872,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: 3154669615fc7df330643942e26d875c
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -8406,6 +8899,8 @@ genomes:
             archive_size: 1.4MB
             asset_size: 5.6MB
             legacy_archive_digest: 4529d2d3b88ca43ee596d013953ea446
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -8424,6 +8919,8 @@ genomes:
             asset_size: 1.5GB
             asset_children: []
             legacy_archive_digest: b94454e9a1e6a94b509ef31cd15526b5
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -8442,6 +8939,8 @@ genomes:
             asset_size: 13.9MB
             asset_children: []
             legacy_archive_digest: dc203b2d63c7c8f5ea179e7bb48b81f9
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -8460,6 +8959,8 @@ genomes:
             asset_size: 38.6MB
             asset_children: []
             legacy_archive_digest: c0bda8965544cfe142c247a127d475d3
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -8478,6 +8979,8 @@ genomes:
             asset_size: 15.4MB
             asset_children: []
             legacy_archive_digest: 1cb2fab8710273b3eadda80e9255dde5
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -8496,6 +8999,8 @@ genomes:
             asset_size: 8.9MB
             asset_children: []
             legacy_archive_digest: 276c1c0bf372afa57280d81760883864
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   cce6f87458c1ba39e952aad2c91a6a68daf7500a7cef72d2:
     genome_description: The Sus Scrofa (Sscrofa10.2) reference sequence from NCBI
     aliases: 
@@ -8522,6 +9027,8 @@ genomes:
             asset_size: 1.1MB
             asset_children: []
             legacy_archive_digest: 12a0b9799f27d9692a2392fc305fd22b
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -8544,6 +9051,8 @@ genomes:
              - cce6f87458c1ba39e952aad2c91a6a68daf7500a7cef72d2/bowtie1_index:1.3.0
             asset_digest: b3e50852bc81ec6ca3748b5677d89894
             legacy_archive_digest: a98679b4522a3ff42eb2eeebd8df430a
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -8559,6 +9068,8 @@ genomes:
             asset_children: []
             asset_digest: 746eea575b3fcfaffb5357d894cd21c7
             legacy_archive_digest: 627723ae3a7f0d2bbebf289f5d16b512
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -8574,6 +9085,8 @@ genomes:
             asset_children: []
             asset_digest: 1759100d5e102c90dabef7f9df1e38a0
             legacy_archive_digest: f1a3788ff88f08e44adf6f7cab652cf9
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -8589,6 +9102,8 @@ genomes:
             asset_children: []
             asset_digest: cd9ad6d6c32c0f7731ef68ed50bcd2fa
             legacy_archive_digest: edc9f1f2f5ff5c5af20fb6612a3962ef
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bwa_index:
         tags:
           0.7.17:
@@ -8604,6 +9119,8 @@ genomes:
             asset_children: []
             asset_digest: 88d86c4bd7225e292ab9723ef293ebe5
             legacy_archive_digest: 8fc4ee239deb14099dfa837fec42565c
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   290ca7367cb31920ab4da4650eaf850611ede37ae6343d4c:
     genome_description: The Homo Sapiens (hg18) reference sequence from UCSC
     aliases: 
@@ -8627,6 +9144,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: d2642d9ab3a69406fa7815d8f4383d5b
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -8649,6 +9168,8 @@ genomes:
              - 290ca7367cb31920ab4da4650eaf850611ede37ae6343d4c/bowtie1_index:1.3.0
             asset_digest: 1a37551c3a098ea745a310fd2debc364
             legacy_archive_digest: 788d11717902b5e20e01a9e49c63a868
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -8664,6 +9185,8 @@ genomes:
             asset_children: []
             asset_digest: 059f23789e50521c5ae217ed0fa0c479
             legacy_archive_digest: 87f45f382c1cf194a3d22fce5edd7c74
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -8682,6 +9205,8 @@ genomes:
             asset_size: 2.9GB
             asset_children: []
             legacy_archive_digest: b3e20fda4d2fd58402d608e976595863
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -8698,6 +9223,8 @@ genomes:
             asset_children: []
             asset_digest: db13753fd168476ea83721c938760c64
             legacy_archive_digest: ebff2fc4b2ff2e25e6871eb57c15488b
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bowtie2_index:
         tags:
           2.4.1:
@@ -8713,6 +9240,8 @@ genomes:
             asset_children: []
             asset_digest: 2d632ebe51d5725ea587b64d42bdeb2e
             legacy_archive_digest: 63f820ea7b9e731ad574b0fe8b193547
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
   5fdf67c6f9095e71e2b274d0278f7145df7e94a5d1ddf385:
     genome_description: The Staphylococcus Aureus Nctc 8325 (2006-02-13) reference sequence from NCBI
     aliases: 
@@ -8740,6 +9269,8 @@ genomes:
              - 5fdf67c6f9095e71e2b274d0278f7145df7e94a5d1ddf385/bowtie1_index:1.3.0
             asset_digest: 7f114d8f97c7bd71712b0e2e6cc8f866
             legacy_archive_digest: 2614739bfb443f90d4fa0ce69768b0d5
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -8755,6 +9286,8 @@ genomes:
             asset_children: []
             asset_digest: 43851f55adb82f902c0ee360d21ec2b7
             legacy_archive_digest: 4a02e60071e28cce6350473d30c9f4dd
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -8773,6 +9306,8 @@ genomes:
             asset_size: 12.0MB
             asset_children: []
             legacy_archive_digest: 9e4fc9cb8500054e49d99eb4f45369f5
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -8788,6 +9323,8 @@ genomes:
             asset_children: []
             asset_digest: 69266505424992ba1b47d3771faaff6d
             legacy_archive_digest: 4acb72719aff6d32eb1cb8b63684ea8c
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bwa_index:
         tags:
           0.7.17:
@@ -8803,6 +9340,8 @@ genomes:
             asset_children: []
             asset_digest: 1d259c5f6b9ff8d1cc9538c1470f3e98
             legacy_archive_digest: a13de1e0f7bf6ad69773581c96cff3bd
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   d1324aa32a103c93574cd81be0c1579fe3a2a0f4fee9b51b:
     genome_description: The Pan Troglodytes (build3.1) reference sequence from NCBI
     aliases: 
@@ -8826,6 +9365,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: dddffeeb0aa84d667a7183db4b635dfa
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -8848,6 +9389,8 @@ genomes:
              - d1324aa32a103c93574cd81be0c1579fe3a2a0f4fee9b51b/bowtie1_index:1.3.0
             asset_digest: 826f25f2726cfc685e0d55e252c55de5
             legacy_archive_digest: 8e51f885981519913dfd952da005efb8
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -8863,6 +9406,8 @@ genomes:
             asset_children: []
             asset_digest: 8766910955ff135fc6fe9cd93f28fd30
             legacy_archive_digest: a8c9499c8a1750fc09c6b4127dfa2996
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -8881,6 +9426,8 @@ genomes:
             asset_size: 2.8GB
             asset_children: []
             legacy_archive_digest: e00be7f89dc77b8e585da217a7ec47e4
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
   d6ffaf6550aafc5aeab33632a94f41c2c6d20c87da4aa25f:
     genome_description: The Saccharomyces Cerevisiae (sacCer3) reference sequence from UCSC
     aliases: 
@@ -8904,6 +9451,8 @@ genomes:
             asset_children: []
             asset_digest: c46f2ac8fdaf2d3315700ee6e2a5a47d
             legacy_archive_digest: ddf016e761ba35f431b0b17d8b4b7f98
+        asset_class: abundant_sequences
+        asset_description: Abundant sequences in the FASTA format -- PhiX spike-in, Poly(A), Poly(C) and adapter sequences
       fasta:
         tags:
           samtools-1.10:
@@ -8926,6 +9475,8 @@ genomes:
              - d6ffaf6550aafc5aeab33632a94f41c2c6d20c87da4aa25f/bowtie1_index:1.3.0
             asset_digest: af81ec09fa19316b858ec1659405333a
             legacy_archive_digest: c3a6b3a2fe16b1ff9217cb2e06721ea7
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -8941,6 +9492,8 @@ genomes:
             asset_children: []
             asset_digest: 0f2b7232e2e9c8a6535d7b20d4953265
             legacy_archive_digest: 4758df4b2f37dc2dbfb91942c6c14ff7
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -8956,6 +9509,8 @@ genomes:
             asset_children: []
             asset_digest: ad9dc4dd5e181cca82a5e38aae06b658
             legacy_archive_digest: 72b6054081c22ca2e17b362f356915f3
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -8974,6 +9529,8 @@ genomes:
             asset_size: 72.5MB
             asset_children: []
             legacy_archive_digest: 553fb81ef4f8fe62465e2adba524dc3f
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -8989,6 +9546,8 @@ genomes:
             asset_children: []
             asset_digest: 4b83a861d2416ff43921e3f9036d1c11
             legacy_archive_digest: 367363472373279b3c8080e769157abc
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -9004,6 +9563,8 @@ genomes:
             asset_children: []
             asset_digest: e067b54731bc34dc738015040c080cf1
             legacy_archive_digest: d734eeb6bcfe1407c8d71eb97e95398f
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
   8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd:
     aliases: 
      - pan_troglodytes-ensembl-chimp214
@@ -9023,6 +9584,8 @@ genomes:
             asset_children: []
             asset_digest: 5200116918b8b7da3b67be1fc95f729e
             legacy_archive_digest: 33464e244937d3b8acf87bedf615024d
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -9038,6 +9601,8 @@ genomes:
             asset_children: []
             asset_digest: bc77b93a19b99e21644fd7e64ece9fa7
             legacy_archive_digest: c1272e70815d7c5526eda5c918b2bc13
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -9053,6 +9618,8 @@ genomes:
             asset_children: []
             asset_digest: 84d0ff8ae2cf4ea19a4f59e770bf2fee
             legacy_archive_digest: 79d1f70153a5f9c3b0004a4de541c088
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Pan Troglodytes (CHIMP2.1.4) reference sequence from Ensembl
   09f77b43935f4202ae69ccaf171b36b43709c447cb7bd69c:
     aliases: 
@@ -9083,6 +9650,8 @@ genomes:
             archive_size: 743.8MB
             asset_size: 2.2GB
             legacy_archive_digest: 751a845762678ec89c6a565091fb535f
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -9098,6 +9667,8 @@ genomes:
             asset_children: []
             asset_digest: cddc15ba36ee4a715f080a47b068da0b
             legacy_archive_digest: 101d0684a9b73ea1967fab72651c3f85
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -9116,6 +9687,8 @@ genomes:
             asset_size: 2.3GB
             asset_children: []
             legacy_archive_digest: 24dff66934b21e6256ca138a710cc30e
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -9135,6 +9708,8 @@ genomes:
             asset_size: 1.3MB
             asset_children: []
             legacy_archive_digest: 8a0bff5cb36cc861abedef9e3b3a9516
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -9153,6 +9728,8 @@ genomes:
             asset_size: 10.7GB
             asset_children: []
             legacy_archive_digest: 060efb5afbc348d19b27968d1d82087b
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -9171,6 +9748,8 @@ genomes:
             asset_size: 3.1GB
             asset_children: []
             legacy_archive_digest: 58733c6301346d9430e3d1c787c1144d
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -9189,6 +9768,8 @@ genomes:
             asset_size: 3.9GB
             asset_children: []
             legacy_archive_digest: c5388fee48a3f2adc4498d5b48be5439
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Equus Caballus (equCab2) reference sequence from UCSC
   e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3:
     aliases: 
@@ -9216,6 +9797,8 @@ genomes:
              - e6a4bd3bd845eb25984f2c5db1be09b76500be256c1e29e3/bowtie1_index:1.3.0
             asset_digest: e00ef6cbeabc7ef8e75c29b698e9816d
             legacy_archive_digest: 502bda6ac0c3f3b5d6e084ebd686355a
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -9231,6 +9814,8 @@ genomes:
             asset_children: []
             asset_digest: 1b8e3b78c853318a9404cfb4bd6db1ce
             legacy_archive_digest: 53938ef5aa7410abfc1e9dfc85c3d387
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -9247,6 +9832,8 @@ genomes:
             asset_children: []
             asset_digest: db13753fd168476ea83721c938760c64
             legacy_archive_digest: a60cceff58078943f325fe634ad516c6
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bowtie2_index:
         tags:
           2.4.1:
@@ -9262,6 +9849,8 @@ genomes:
             asset_children: []
             asset_digest: b282613f132ae6295b44debac9879ff2
             legacy_archive_digest: 55a0bceffc62c52a4e97c91d9a524948
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -9277,6 +9866,8 @@ genomes:
             asset_children: []
             asset_digest: ae59c23227574dda55d95977845ad0ee
             legacy_archive_digest: b959f471fec8e7524b1b1a65901aad7d
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Homo Sapiens (hg19) reference sequence from UCSC
   e6f34daf7724d7486ef42a32e93ed6b524482a8c0ea6c6ca:
     aliases: 
@@ -9307,6 +9898,8 @@ genomes:
             archive_size: 39.9MB
             asset_size: 134.5MB
             legacy_archive_digest: 12741a5d2a9e49a98b6fbdca889f08e5
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -9325,6 +9918,8 @@ genomes:
             asset_size: 2.6GB
             asset_children: []
             legacy_archive_digest: 256cde73d7ec31c1c836909badd30b17
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -9343,6 +9938,8 @@ genomes:
             asset_size: 149.2MB
             asset_children: []
             legacy_archive_digest: 303866bd110462e0a7f41536929abc65
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -9362,6 +9959,8 @@ genomes:
             asset_size: 88.0KB
             asset_children: []
             legacy_archive_digest: 38e7b51b46d8c8950cf9c223d3d6fbc9
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -9380,6 +9979,8 @@ genomes:
             asset_size: 654.3MB
             asset_children: []
             legacy_archive_digest: d190f2ff47d7ed7f571f99b4295007bc
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -9398,6 +9999,8 @@ genomes:
             asset_size: 194.3MB
             asset_children: []
             legacy_archive_digest: bf5074944a76cda5990a89cb60d93616
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -9416,6 +10019,8 @@ genomes:
             asset_size: 230.7MB
             asset_children: []
             legacy_archive_digest: 83dc28fc6679f22505383da64b44be78
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Drosophila Melanogaster (BDGP6) reference sequence from Ensembl
   d517af93e7176a6b17221caffb0973edc0f9e7b422b4a35e:
     aliases: 
@@ -9446,6 +10051,8 @@ genomes:
             archive_size: 688.4MB
             asset_size: 2.2GB
             legacy_archive_digest: 74a40c2e35722470d039082f975129ee
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       bowtie1_index:
         tags:
           1.3.0:
@@ -9464,6 +10071,8 @@ genomes:
             asset_size: 2.3GB
             asset_children: []
             legacy_archive_digest: 840c11bb1ac918844098d450047ef78a
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -9483,6 +10092,8 @@ genomes:
             asset_size: 1.3MB
             asset_children: []
             legacy_archive_digest: 386cc3efd01086d92829dc527cd565b7
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -9501,6 +10112,8 @@ genomes:
             asset_size: 10.7GB
             asset_children: []
             legacy_archive_digest: 9cc44468df9c923196b3747abef1749f
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -9519,6 +10132,8 @@ genomes:
             asset_size: 3.1GB
             asset_children: []
             legacy_archive_digest: b0ae982cc30c5945f0d9efc28506e633
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
     genome_description: The Equus Caballus (EquCab2.0) reference sequence from NCBI
   cace30a1b5f7dfc0267827e25f0cdffd04e9a35a82fea0b3:
     aliases: 
@@ -9546,6 +10161,8 @@ genomes:
              - cace30a1b5f7dfc0267827e25f0cdffd04e9a35a82fea0b3/bowtie1_index:1.3.0
             asset_digest: d2b1498129c0a94017a082de0d8a20c6
             legacy_archive_digest: 21c93788d56245be690813d3d87e9b43
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -9561,6 +10178,8 @@ genomes:
             asset_children: []
             asset_digest: b087544502348253a391c07caa0766f6
             legacy_archive_digest: e89a47a7fce7fa9ee3d92d782ff1319a
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -9576,6 +10195,8 @@ genomes:
             asset_children: []
             asset_digest: 78525955661a72dc9b26d6bafd9e54b4
             legacy_archive_digest: 14eba9336ada08b1dccfaec741febdb6
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -9591,6 +10212,8 @@ genomes:
             asset_children: []
             asset_digest: b3132b11e18fb440c519b8c399cf7135
             legacy_archive_digest: d3e0910049f47b537aa1574d592e9554
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -9606,6 +10229,8 @@ genomes:
             asset_children: []
             asset_digest: 1e3d7f6bad4660e9131a548ca8537e36
             legacy_archive_digest: 642c07da767253425ad77c053f6a9c4d
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -9621,6 +10246,8 @@ genomes:
             asset_children: []
             asset_digest: 1a04d5ddbff5a7e283a1f48a9dc5a932
             legacy_archive_digest: 6934bf839cc5aac440ad58b59f8ae4d9
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Saccharomyces Cerevisiae (build2.1) reference sequence from NCBI
   f4e14438d28bb1d0dc61343de4063de9848109ba9927ab34:
     aliases: 
@@ -9651,6 +10278,8 @@ genomes:
             archive_size: 30.4MB
             asset_size: 98.7MB
             legacy_archive_digest: bd8cc6a1773226dd1ead58e6dc880174
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -9669,6 +10298,8 @@ genomes:
             asset_size: 2.3GB
             asset_children: []
             legacy_archive_digest: 703fcb41a33666fa4ac83a0344788384
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -9687,6 +10318,8 @@ genomes:
             asset_size: 111.6MB
             asset_children: []
             legacy_archive_digest: ba3fa081d7f861a5c21c5f2fa055998e
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -9706,6 +10339,8 @@ genomes:
             asset_size: 1.2MB
             asset_children: []
             legacy_archive_digest: e3dfeaf95a9e1a647f019d6f84c47d7c
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -9724,6 +10359,8 @@ genomes:
             asset_size: 483.2MB
             asset_children: []
             legacy_archive_digest: 146454a9b6a043a3407a2a37ae4ef7b7
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -9742,6 +10379,8 @@ genomes:
             asset_size: 144.6MB
             asset_children: []
             legacy_archive_digest: 24b59aefc5333a82f6f1e3d866ab0a0b
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -9760,6 +10399,8 @@ genomes:
             asset_size: 168.5MB
             asset_children: []
             legacy_archive_digest: 094e6faedc44c51ebb882e012e7111c3
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Caenorhabditis Elegans (ce10) reference sequence from UCSC
   510c960f45e2bdc5388658c7fb71cdaed5506692e22be462:
     aliases: 
@@ -9790,6 +10431,8 @@ genomes:
             archive_size: 1.4MB
             asset_size: 5.7MB
             legacy_archive_digest: b46aef4b32f9100800740d6e74604286
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -9808,6 +10451,8 @@ genomes:
             asset_size: 1.5GB
             asset_children: []
             legacy_archive_digest: 7c2442794d8239e5978e41515b65e5c0
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -9826,6 +10471,8 @@ genomes:
             asset_size: 13.9MB
             asset_children: []
             legacy_archive_digest: 8e879c366dd65951cd9b66de8eaf51ae
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -9844,6 +10491,8 @@ genomes:
             asset_size: 38.9MB
             asset_children: []
             legacy_archive_digest: d8728ea81ef7147d306145963aa43f9f
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -9862,6 +10511,8 @@ genomes:
             asset_size: 15.5MB
             asset_children: []
             legacy_archive_digest: e1744570c623a3a5ec5e2f913e3d3e65
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -9880,6 +10531,8 @@ genomes:
             asset_size: 8.9MB
             asset_children: []
             legacy_archive_digest: 976cee55ca92d2966a1c6377bfd00e61
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Escherichia Coli K 12 Dh10B (2008-03-17) reference sequence from NCBI
   6c19648fbd294943eb8bfb33fdb685738580e9ee7e73af3d:
     aliases: 
@@ -9910,6 +10563,8 @@ genomes:
             archive_size: 825.8MB
             asset_size: 2.5GB
             legacy_archive_digest: a108e4f08dd6c40b8825ab9a7e42fc36
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -9925,6 +10580,8 @@ genomes:
             asset_children: []
             asset_digest: dd92acc0623b047c383daee255d953cf
             legacy_archive_digest: ce75b63042e25ffbfb9bebbce1bce5a1
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -9943,6 +10600,8 @@ genomes:
             asset_size: 2.6GB
             asset_children: []
             legacy_archive_digest: 40c8dccb2786ca60c1574cdb6b3de0d6
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -9962,6 +10621,8 @@ genomes:
             asset_size: 1.3MB
             asset_children: []
             legacy_archive_digest: 5bbd00e91e4f8bd4210fb4296cad57e2
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -9977,6 +10638,8 @@ genomes:
             asset_children: []
             asset_digest: 81e6cb0df1f71fa6add7a6e333152387
             legacy_archive_digest: 0b1fbac29ec36c5617e4a6c2a22cae77
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -9995,6 +10658,8 @@ genomes:
             asset_size: 3.5GB
             asset_children: []
             legacy_archive_digest: aaa478bb9ef6d7c7eaea80b071531b6e
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -10013,6 +10678,8 @@ genomes:
             asset_size: 4.3GB
             asset_children: []
             legacy_archive_digest: c1c36fd47047081ea26566b7d97896a9
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Bos Taurus (bosTau6) reference sequence from UCSC
   d9b2c85c270a2c72500c3306771080f7bea3f853ce837721:
     aliases: 
@@ -10040,6 +10707,8 @@ genomes:
              - d9b2c85c270a2c72500c3306771080f7bea3f853ce837721/bowtie1_index:1.3.0
             asset_digest: 43995fc771305e10eaaa44a26bee1455
             legacy_archive_digest: ff97f8c25ea720a1b82917747c77503b
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -10055,6 +10724,8 @@ genomes:
             asset_children: []
             asset_digest: 52abf51f0c4db07bbcb6b8e85ce19bed
             legacy_archive_digest: 4578b3fc51fb706a053a40169ec8d761
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -10070,6 +10741,8 @@ genomes:
             asset_children: []
             asset_digest: 52a15b826f3fd6f739d4561c83a9a4db
             legacy_archive_digest: 7b1d6d6dc8b38185ebffe5714d704e5e
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -10085,6 +10758,8 @@ genomes:
             asset_children: []
             asset_digest: 84507aafe445542af2b045a1bfa18de1
             legacy_archive_digest: bbd3fc133254cf27101f0a1bdeefc119
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
     genome_description: The Pan Troglodytes (CHIMP2.1) reference sequence from Ensembl
   5c776b8e2735a44be55b71df6931a55fce3ee0421383af97:
     aliases: 
@@ -10115,6 +10790,8 @@ genomes:
             archive_size: 28.9MB
             asset_size: 98.4MB
             legacy_archive_digest: d23823a906c7ec7fad33a70036c07a22
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -10133,6 +10810,8 @@ genomes:
             asset_size: 2.3GB
             asset_children: []
             legacy_archive_digest: 07984fa930ec1edd1f00005a619cd371
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -10151,6 +10830,8 @@ genomes:
             asset_size: 111.6MB
             asset_children: []
             legacy_archive_digest: 14a2884f3f4c2896b087acd105ee1c6d
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -10170,6 +10851,8 @@ genomes:
             asset_size: 1.2MB
             asset_children: []
             legacy_archive_digest: ae76d1f96c1e73883cb77dd642f911fd
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -10188,6 +10871,8 @@ genomes:
             asset_size: 482.6MB
             asset_children: []
             legacy_archive_digest: 987822c74e621f561727f9dae804fba9
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -10206,6 +10891,8 @@ genomes:
             asset_size: 144.6MB
             asset_children: []
             legacy_archive_digest: 28022aa96ff98fcc5f888434bc90bfdd
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -10224,6 +10911,8 @@ genomes:
             asset_size: 168.5MB
             asset_children: []
             legacy_archive_digest: 08e3e05a11ccd7ecdc4e3a1f32606c53
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Caenorhabditis Elegans (WBcel235) reference sequence from Ensembl
   f01d11bd41587682fdaf207aaf09a90769de53040ed7474b:
     aliases: 
@@ -10244,6 +10933,8 @@ genomes:
             asset_children: []
             asset_digest: fd08f55e8f55343f34a4f66449684ab9
             legacy_archive_digest: 46cf44a64ed8451efd8293abf309c558
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -10262,6 +10953,8 @@ genomes:
             asset_size: 1.4GB
             asset_children: []
             legacy_archive_digest: faf50e857b5845dc8f2736dfd1b284d5
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -10278,6 +10971,8 @@ genomes:
             asset_children: []
             asset_digest: 3b6718a9e5d2ffa785955e0136d28176
             legacy_archive_digest: 2101f818db40c52ad6b6a855d8ca6bb7
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -10293,6 +10988,8 @@ genomes:
             asset_children: []
             asset_digest: cce9596aaa7985b69964edf759761b18
             legacy_archive_digest: d6f64bef38b0f01904e994ed6bb41bfc
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -10311,6 +11008,8 @@ genomes:
             asset_size: 1.8GB
             asset_children: []
             legacy_archive_digest: 86adfeac2603c1f446992ff63aa633e7
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
     genome_description: The Danio Rerio (Zv9) reference sequence from Ensembl
   ff66c18d5f9c4e8793ca3069708139a3ac12a4981aac699d:
     aliases: 
@@ -10341,6 +11040,8 @@ genomes:
             archive_size: 15.6KB
             asset_size: 1.2MB
             legacy_archive_digest: 65d5884975bdb2887a9a0ef89992817b
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -10359,6 +11060,8 @@ genomes:
             asset_size: 1.5GB
             asset_children: []
             legacy_archive_digest: 08b1a0bf58fa9d10ec842288171a401b
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -10374,6 +11077,8 @@ genomes:
             asset_children: []
             asset_digest: 6ff4a87f0988d1c8c4f528c3153633bb
             legacy_archive_digest: db2537d5f4cfa3c06b9a3ef45c0bd2a8
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -10389,6 +11094,8 @@ genomes:
             asset_children: []
             asset_digest: e42ab48a076747b79e8120b2d7a8ab1c
             legacy_archive_digest: 62d3fc07724a80ab5ce96c1bd80f02ac
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -10404,6 +11111,8 @@ genomes:
             asset_children: []
             asset_digest: 7301a67b182dab7db9e4f0a43e9386c6
             legacy_archive_digest: 17dd3dfed5ad76ff487273eb93dd4ee1
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -10419,6 +11128,8 @@ genomes:
             asset_children: []
             asset_digest: 32016af99e599ddbd74b8636cd57ef10
             legacy_archive_digest: 1b24578e1ac9af74f1f8f05301a7534d
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Enterobacteriophage Lambda (1993-04-28) reference sequence from NCBI
   540a7136bcfc40d572efc897c93f3cef5df0f572bc57c552:
     aliases: 
@@ -10446,6 +11157,8 @@ genomes:
              - 540a7136bcfc40d572efc897c93f3cef5df0f572bc57c552/bowtie1_index:1.3.0
             asset_digest: 594b2d08ffe2c13257c237dc7b72521a
             legacy_archive_digest: 4e27fb80250ec6da867bac9b9888ca97
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -10461,6 +11174,8 @@ genomes:
             asset_children: []
             asset_digest: 5302776fce8e9062c0d429198837579b
             legacy_archive_digest: 89b485133ec0f353c6a88e7ee4b99fd6
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -10476,6 +11191,8 @@ genomes:
             asset_children: []
             asset_digest: efa850870e93dbd8638264f9c71fb95a
             legacy_archive_digest: e02f5f741f297bb0ca7acdedd0160109
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -10495,6 +11212,8 @@ genomes:
             asset_size: 1.3MB
             asset_children: []
             legacy_archive_digest: 04622c45957abae07771a123237aa1dd
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -10510,6 +11229,8 @@ genomes:
             asset_children: []
             asset_digest: 7a9e9fda01498174f0c472c9685658ff
             legacy_archive_digest: 32e896e3d574c70823209804b93d3d45
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -10525,6 +11246,8 @@ genomes:
             asset_children: []
             asset_digest: 6ab99f34cae24c92fadb68927f3666f6
             legacy_archive_digest: 4932d38cb0e6f3201c299ec9dd92e66e
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
     genome_description: The Bos Taurus (bosTau7) reference sequence from UCSC
   adc1d1450f23ea606fe0552ff0c45458be560fc72a473497:
     aliases: 
@@ -10552,6 +11275,8 @@ genomes:
              - adc1d1450f23ea606fe0552ff0c45458be560fc72a473497/bowtie1_index:1.3.0
             asset_digest: 12ed4dda74d11d9b0050cd037637c9d1
             legacy_archive_digest: beae30b73d3a8f780e01e4334c69044e
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -10567,6 +11292,8 @@ genomes:
             asset_children: []
             asset_digest: 16a746ba04379a7c0d025ab13cc43264
             legacy_archive_digest: 8571f22d093b01ef4d4bdc8c849d1d1b
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -10582,6 +11309,8 @@ genomes:
             asset_children: []
             asset_digest: 1ceacdea13f0656d9eee8c8b3f2aaed8
             legacy_archive_digest: aea03712e682b5b9c7d711fb79e4e5f7
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -10597,6 +11326,8 @@ genomes:
             asset_children: []
             asset_digest: 07ce382174fb4864e6070f8f884d54f8
             legacy_archive_digest: b716a2e741e7b680e38ad62ac26586fc
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -10615,6 +11346,8 @@ genomes:
             asset_size: 171.6MB
             asset_children: []
             legacy_archive_digest: e01d7e07c19cc413d34d42c04aac31ec
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -10633,6 +11366,8 @@ genomes:
             asset_size: 202.0MB
             asset_children: []
             legacy_archive_digest: ab0608dc76f994888faf5b653443aaa4
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Drosophila Melanogaster (build5.41) reference sequence from NCBI
   a00dcb54ebd178ec14ebbe8a776bac6a0df609b76895679d:
     aliases: 
@@ -10660,6 +11395,8 @@ genomes:
              - a00dcb54ebd178ec14ebbe8a776bac6a0df609b76895679d/bowtie1_index:1.3.0
             asset_digest: b440c3945b5dfa2bf36b1f110f9c3773
             legacy_archive_digest: 0a8c3797caac91f9ce3dc61069835088
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -10675,6 +11412,8 @@ genomes:
             asset_children: []
             asset_digest: c1c697e6969ae0d24d92bf9883147226
             legacy_archive_digest: 9c9c613cca5594d849499de5ccf22881
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -10690,6 +11429,8 @@ genomes:
             asset_children: []
             asset_digest: a8458c0368a264e343693963111f9bf6
             legacy_archive_digest: 40511ee3e398becb5d64790640eda2f6
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -10706,6 +11447,8 @@ genomes:
             asset_children: []
             asset_digest: 23adaff321cb156625617f3193f2ebdc
             legacy_archive_digest: b2e8c9e62299563602596e5b0cf81e4e
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -10721,6 +11464,8 @@ genomes:
             asset_children: []
             asset_digest: 74b77249af9ed363d296f23914a9cf83
             legacy_archive_digest: 46762e7500c906c6d28ce996e2d6fc0d
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -10736,6 +11481,8 @@ genomes:
             asset_children: []
             asset_digest: 8baf3c2cb5172dc4ffebd25b0ae63975
             legacy_archive_digest: a83ce5ba7ba0223c443c21ec952876bd
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -10751,6 +11498,8 @@ genomes:
             asset_children: []
             asset_digest: 118c307344add8ae2e75e93e1090b77c
             legacy_archive_digest: 966cae9725aee2cd65c43f59b6da1533
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Bos Taurus (bosTau4) reference sequence from UCSC
   0c19c1344fbc55afd9af707e323faba6fa71657daf850d3a:
     aliases: 
@@ -10781,6 +11530,8 @@ genomes:
             archive_size: 715.0MB
             asset_size: 2.5GB
             legacy_archive_digest: 6169f4f7098a05e3413df0af655c346f
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -10796,6 +11547,8 @@ genomes:
             asset_children: []
             asset_digest: 090455284c9132c28c0268d96a2b46f5
             legacy_archive_digest: cb104bb517f494fda676cee675f438db
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -10814,6 +11567,8 @@ genomes:
             asset_size: 2.5GB
             asset_children: []
             legacy_archive_digest: a6e15ffbff5edc5420962dd0801d8c14
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -10832,6 +11587,8 @@ genomes:
             asset_size: 11.5GB
             asset_children: []
             legacy_archive_digest: 2202fecdc9e59d1a536169dc423fa7b9
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -10850,6 +11607,8 @@ genomes:
             asset_size: 3.3GB
             asset_children: []
             legacy_archive_digest: a8b58ce4edd340730b48404db7640033
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -10868,6 +11627,8 @@ genomes:
             asset_size: 4.3GB
             asset_children: []
             legacy_archive_digest: 3f07106f7f5aa84e5de2d8b9f5eb92ba
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Bos Taurus (Btau_4.2) reference sequence from NCBI
   b48edbe088d31f4319a0dec86f3dade9a6ecaaa446cdf10a:
     aliases: 
@@ -10898,6 +11659,8 @@ genomes:
             archive_size: 720.5MB
             asset_size: 2.5GB
             legacy_archive_digest: b1d01d6ea7f5c7eb3839a8ce7db7a14c
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -10913,6 +11676,8 @@ genomes:
             asset_children: []
             asset_digest: b0f5e33ee7e96ebf7d536faf535d98a1
             legacy_archive_digest: e380164aad4c06bf59291aedc4d53c0d
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -10931,6 +11696,8 @@ genomes:
             asset_size: 2.5GB
             asset_children: []
             legacy_archive_digest: 89e2599ae62f99d3c568524062395c65
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -10949,6 +11716,8 @@ genomes:
             asset_size: 11.5GB
             asset_children: []
             legacy_archive_digest: b4962c44894aa8a51492a6b510561fa8
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -10967,6 +11736,8 @@ genomes:
             asset_size: 3.3GB
             asset_children: []
             legacy_archive_digest: 7290efb6095329371c4d67377104c7a0
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -10985,6 +11756,8 @@ genomes:
             asset_size: 4.3GB
             asset_children: []
             legacy_archive_digest: 5bde226ed56b3a6291a8dd01028f114a
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Bos Taurus (Btau_4.0) reference sequence from Ensembl
   9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc:
     aliases: 
@@ -11005,6 +11778,8 @@ genomes:
             asset_children: []
             asset_digest: c5a0f6a198b31524f1437b60254db80a
             legacy_archive_digest: 01ba5b723ddcab6dd6de784722a6534c
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11020,6 +11795,8 @@ genomes:
             asset_children: []
             asset_digest: bd4f031fd770c5f973eed97893c5f8e8
             legacy_archive_digest: afb39b64bed9d8bb377d09e2013cfbbb
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -11036,6 +11813,8 @@ genomes:
             asset_children: []
             asset_digest: 725ebf3bd4185744e2d5e36bf6570f51
             legacy_archive_digest: b7dd59c7ede1be0e3724a426821e40ba
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bowtie2_index:
         tags:
           2.4.1:
@@ -11051,6 +11830,8 @@ genomes:
             asset_children: []
             asset_digest: 2030c3d41d9ade84bcab3f9d2ce6b40b
             legacy_archive_digest: 6820a245ca55462076796e83b2d8e9b9
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -11066,6 +11847,8 @@ genomes:
             asset_children: []
             asset_digest: 14c7686c449316384fa0efa965cd4e32
             legacy_archive_digest: ffd75f511dfcf8e582e3f6902c2c6c14
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Mus Musculus (mm9) reference sequence from UCSC
   05e62106248aa5e5a05efc2833d4262ab1a08da8f5f54f79:
     aliases: 
@@ -11093,6 +11876,8 @@ genomes:
              - 05e62106248aa5e5a05efc2833d4262ab1a08da8f5f54f79/bowtie1_index:1.3.0
             asset_digest: 2a79f9c0ad4f3533f636a2dfbd997f36
             legacy_archive_digest: 06307d3f7c280cd5ff226ac21a6473df
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -11108,6 +11893,8 @@ genomes:
             asset_children: []
             asset_digest: 3d3318350d6b92ef9d9d5e818fa9fbdd
             legacy_archive_digest: d347d6dc08700a16fcacbd71529aa3ac
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11123,6 +11910,8 @@ genomes:
             asset_children: []
             asset_digest: 33bf37503db6f3130470b5f0cfa67fad
             legacy_archive_digest: 6e5f291972b76134a5cc2372e4294578
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bowtie2_index:
         tags:
           2.4.1:
@@ -11138,6 +11927,8 @@ genomes:
             asset_children: []
             asset_digest: acdada33b5c98d1a65a7c9beb97e2d19
             legacy_archive_digest: be273a3e77beabbb3a19613db3d521d9
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -11153,6 +11944,8 @@ genomes:
             asset_children: []
             asset_digest: 0f02a9cb9ac9de519aaff9dae4892b8d
             legacy_archive_digest: 9cf1ef5babdfbbd590a1c56b400de4bf
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Pseudomonas Aeruginosa Pao1 (2000-09-13) reference sequence from NCBI
   3cbf2958bfc8093d3e8706efd35f637157d85b22c50e7a98:
     aliases: 
@@ -11183,6 +11976,8 @@ genomes:
             archive_size: 1.3MB
             asset_size: 4.1MB
             legacy_archive_digest: cab590e2c1e3127a7952634162889e79
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -11201,6 +11996,8 @@ genomes:
             asset_size: 1.5GB
             asset_children: []
             legacy_archive_digest: e735000871b0b024a83016ba7736c450
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11219,6 +12016,8 @@ genomes:
             asset_size: 13.5MB
             asset_children: []
             legacy_archive_digest: 3fb9cd1793b3efcfd88d494118b3e6bc
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -11237,6 +12036,8 @@ genomes:
             asset_size: 36.7MB
             asset_children: []
             legacy_archive_digest: 66b1c2f74147422ce5256e8e43158e1e
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -11255,6 +12056,8 @@ genomes:
             asset_size: 14.8MB
             asset_children: []
             legacy_archive_digest: 92183d62b003a4e395db0833e69c97c2
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -11273,6 +12076,8 @@ genomes:
             asset_size: 8.2MB
             asset_children: []
             legacy_archive_digest: 6f43ad919c4adad9dba4da8a3ea65b41
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Bacillus Subtilis 168 (EB2) reference sequence from Ensembl
   f54e87a8cfd1d14cb4a59a2f3efd3411913f648c389cc067:
     aliases: 
@@ -11300,6 +12105,8 @@ genomes:
              - f54e87a8cfd1d14cb4a59a2f3efd3411913f648c389cc067/bowtie1_index:1.3.0
             asset_digest: 173a0606f88ee205d8056ac30468cce1
             legacy_archive_digest: 89fe5ecf63625cffaa644ff47ad10585
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -11315,6 +12122,8 @@ genomes:
             asset_children: []
             asset_digest: be8178c970c62d9532a668d8a8dbb5c1
             legacy_archive_digest: f6e07f3095809e703b8f59978c137640
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11330,6 +12139,8 @@ genomes:
             asset_children: []
             asset_digest: 3be13f22d6aa1b68680992dc766014dc
             legacy_archive_digest: 933abc8be09777cf5a84fedf39b412be
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bowtie2_index:
         tags:
           2.4.1:
@@ -11345,6 +12156,8 @@ genomes:
             asset_children: []
             asset_digest: 3f7127fdd8b5aebb085bc2260dc3ef71
             legacy_archive_digest: 6bfe63459a16759bf9700d3829f0fbb5
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -11360,6 +12173,8 @@ genomes:
             asset_children: []
             asset_digest: 2483de995d44d4200573ca7b3943adff
             legacy_archive_digest: f39807157d5b98ff62ed6be1adc076fb
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Saccharomyces Cerevisiae (sacCer2) reference sequence from UCSC
   503f4317203cd9070fe4a37c23a0d8cf8ad0016a999ad35b:
     aliases: 
@@ -11387,6 +12202,8 @@ genomes:
              - 503f4317203cd9070fe4a37c23a0d8cf8ad0016a999ad35b/bowtie1_index:1.3.0
             asset_digest: 1b39e64249178b6abb2cc0996b75fd17
             legacy_archive_digest: 9c3cef0bd1fd23cb8edd11aa0dd34a4e
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -11402,6 +12219,8 @@ genomes:
             asset_children: []
             asset_digest: 7a4a34c43f10ef2a293e8fea6572642c
             legacy_archive_digest: 05e1c145a91d69ebc7d3e0e3b9790aeb
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11417,6 +12236,8 @@ genomes:
             asset_children: []
             asset_digest: 3437786b9cb052a3932df93fa0c64656
             legacy_archive_digest: 17991744cdfc75a5e5f403f2dfee85a9
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -11432,6 +12253,8 @@ genomes:
             asset_children: []
             asset_digest: 94450ecdf8c844f6571256c6a563cc60
             legacy_archive_digest: 04d3112572a00ecccd12c315f83b6ae2
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -11447,6 +12270,8 @@ genomes:
             asset_children: []
             asset_digest: b89a2372d289d687ce19308e1dec57bd
             legacy_archive_digest: 60858e7232ff15044689557eb7345bf1
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
     genome_description: The Drosophila Melanogaster (BDGP5.25) reference sequence from Ensembl
   2230c535660fb4774114bfa966a62f823fdb6d21acf138d4:
     aliases: 
@@ -11474,6 +12299,8 @@ genomes:
              - 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4/bowtie1_index:1.3.0
             asset_digest: 1948eb1a0b7b483ad15332d77115ec34
             legacy_archive_digest: 77859cd1e7637272be34ccf2a7b007cd
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -11489,6 +12316,8 @@ genomes:
             asset_children: []
             asset_digest: b2b52be879d91bfc34383b4d054fa4f0
             legacy_archive_digest: 398b891a3751133d030416b392965420
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11504,6 +12333,8 @@ genomes:
             asset_children: []
             asset_digest: 1e02c657a8fb319becbceca5863760a5
             legacy_archive_digest: b0370317b5498f8eb642397264c0e334
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -11520,6 +12351,8 @@ genomes:
             asset_children: []
             asset_digest: db13753fd168476ea83721c938760c64
             legacy_archive_digest: 93a57a5df7f7d710122a8b8e091ea57e
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bowtie2_index:
         tags:
           2.4.1:
@@ -11535,6 +12368,8 @@ genomes:
             asset_children: []
             asset_digest: 04880a3192a69bbfdc36da25b67203cb
             legacy_archive_digest: 873248def79e287cc0175d4e52f754a8
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -11550,6 +12385,8 @@ genomes:
             asset_children: []
             asset_digest: 6f8527e78c91fe17f9d08eddb1ddf570
             legacy_archive_digest: b3c7026f98dc0ed63e9843633c10dfe4
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Homo Sapiens (GRCh38) reference sequence from NCBI
   4dffabfea72b853ee1b1b1b488589acf447b48df309803de:
     aliases: 
@@ -11570,6 +12407,8 @@ genomes:
             asset_children: []
             asset_digest: 0d830651d0de5bf3f65a44d921b31203
             legacy_archive_digest: ec83e42c20abbb1fcd9daa1ef13d803d
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11585,6 +12424,8 @@ genomes:
             asset_children: []
             asset_digest: a4a85fcba8c2b83d72ee1cda264262b5
             legacy_archive_digest: 906e616b6e9565bf1c78a88e98a60f53
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -11600,6 +12441,8 @@ genomes:
             asset_children: []
             asset_digest: 5e5b3731860f518ed77c912d15bbc35f
             legacy_archive_digest: 62883761a15da997f5fe83c6f0a847b7
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -11615,6 +12458,8 @@ genomes:
             asset_children: []
             asset_digest: 557d0b25fe3222c8dd3ccf432822564c
             legacy_archive_digest: f039829b107daf3aa18950b7a0910074
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -11630,6 +12475,8 @@ genomes:
             asset_children: []
             asset_digest: a453e6acb73d20f94aab4aa9dcf0e93c
             legacy_archive_digest: 3b05c19a11c94413ec8038057f257ed6
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Sus Scrofa (Sscrofa10.2) reference sequence from Ensembl
   6f1e4c9fc1fc57e81c2d860c6c614f7db07d192dbd8585ae:
     aliases: 
@@ -11657,6 +12504,8 @@ genomes:
              - 6f1e4c9fc1fc57e81c2d860c6c614f7db07d192dbd8585ae/bowtie1_index:1.3.0
             asset_digest: de5fc3abb8d27cbab0f82cb999a79ad9
             legacy_archive_digest: a18fa87751a8c9d2b22074869f5f44d4
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -11672,6 +12521,8 @@ genomes:
             asset_children: []
             asset_digest: c19b1724c8e2203de612fea8953b7c1f
             legacy_archive_digest: 95634fa25d2d08b4298ac6bbcc2c20d5
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11687,6 +12538,8 @@ genomes:
             asset_children: []
             asset_digest: 1dd961ce0495bacc52665b1df2bd0c9c
             legacy_archive_digest: fb44cc6811faac41151145e4f6ea07e7
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       small_rna:
         tags:
           default:
@@ -11703,6 +12556,8 @@ genomes:
             asset_children: []
             asset_digest: 36ba0d0687461ad496110e9eb733ab17
             legacy_archive_digest: 4425fc00df3ee435b76adc972e6982f2
+        asset_class: small_rna
+        asset_description: Small RNA sequences in the FASTA format. A predicted hairpin portion of a miRNA transcript and information on the location and sequence of the mature miRNA sequence
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -11718,6 +12573,8 @@ genomes:
             asset_children: []
             asset_digest: 06140b3dacac66496996b3dcf60445a5
             legacy_archive_digest: b1f0cea07f7ad6d7161edcf4c73fbd85
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -11733,6 +12590,8 @@ genomes:
             asset_children: []
             asset_digest: 86ec8eac542e87ad46297e7ac6844d24
             legacy_archive_digest: 0935708d7a13a2919a51bf09c1e430f4
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -11748,6 +12607,8 @@ genomes:
             asset_children: []
             asset_digest: 4d9b8625f3198065b06a177a262adf1c
             legacy_archive_digest: 94759666d47ff4aa02fff2be9db3ecc0
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Sorghum Bicolor (Sbi1) reference sequence from Ensembl
   3a9b682a8552f10ccbe5994d62b8f3b7496575450c64b585:
     aliases: 
@@ -11775,6 +12636,8 @@ genomes:
              - 3a9b682a8552f10ccbe5994d62b8f3b7496575450c64b585/bowtie1_index:1.3.0
             asset_digest: d19fafe62ec70c31ff01c191faac21ca
             legacy_archive_digest: 7b3e04651425f7697447efb7321b2ab3
+        asset_class: fasta
+        asset_description: Sequences in the FASTA format, indexed FASTA (produced with samtools index) and chromosome sizes file
       star_index:
         tags:
           2.7.3a:
@@ -11790,6 +12653,8 @@ genomes:
             asset_children: []
             asset_digest: fe3498f179a15d222f9cd9431e3308d0
             legacy_archive_digest: c9ffccd4ba339f734e53d10741c57884
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11805,6 +12670,8 @@ genomes:
             asset_children: []
             asset_digest: 5e54da02793249011c2dfb16f7f45800
             legacy_archive_digest: 20cf156a59fe53039671b0a3f97cdd86
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -11820,6 +12687,8 @@ genomes:
             asset_children: []
             asset_digest: 445680c02ab9abef11380d57c34185f2
             legacy_archive_digest: 97fed9971d32a4f79200a728e1a70744
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -11835,6 +12704,8 @@ genomes:
             asset_children: []
             asset_digest: f2c8e40087831b31d64df0efc0dd475b
             legacy_archive_digest: 3bdf6f6d60fa16df2030c39c7ec54ba2
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -11850,6 +12721,8 @@ genomes:
             asset_children: []
             asset_digest: 12f152617f58f309b1156e3326ccf229
             legacy_archive_digest: 7a41346eb286aafbe3258f8a2b80e3de
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Rhodobacter Sphaeroides 2.4.1 (2005-10-07) reference sequence from NCBI
   2627e75b56fa4b74655d00545dd3b424db7fecf54969213a:
     aliases: 
@@ -11870,6 +12743,8 @@ genomes:
             asset_children: []
             asset_digest: d50812434e80e4659541e8d1f9b13a86
             legacy_archive_digest: 42f43c19683f24678a7b9b89d679c358
+        asset_class: star_index
+        asset_description: Genome index for STAR RNA-seq aligner, produced with STAR --runMode genomeGenerate
       bowtie1_index:
         tags:
           1.3.0:
@@ -11885,6 +12760,8 @@ genomes:
             asset_children: []
             asset_digest: b57e6d00542ec0c36dd0cbb6d4a382e3
             legacy_archive_digest: f6454bff2f04b0e3b06aca352597f0f6
+        asset_class: bowtie1_index
+        asset_description: Genome index for bowtie1, produced with bowtie-build
       bismark_bt2_index:
         tags:
           0.22.1:
@@ -11900,6 +12777,8 @@ genomes:
             asset_children: []
             asset_digest: 25d17375823a50309466c79802cc46c8
             legacy_archive_digest: 83edd9c061539bd4da05c9e8a44c6587
+        asset_class: bismark_bt2_index
+        asset_description: Genome index for Bisulfite-Seq applications, produced by bismark_genome_preparation using bowtie2
       bowtie2_index:
         tags:
           2.4.1:
@@ -11915,6 +12794,8 @@ genomes:
             asset_children: []
             asset_digest: a94988bd13dd538f2c8d5fb46d4d5d52
             legacy_archive_digest: 5ff6a01f532c27af49d241431ef08f55
+        asset_class: bowtie2_index
+        asset_description: Genome index for bowtie, produced with bowtie-build
       bwa_index:
         tags:
           0.7.17:
@@ -11930,6 +12811,8 @@ genomes:
             asset_children: []
             asset_digest: b16207b0b62274529938b8dd93d18b3d
             legacy_archive_digest: a3fc7c248fd4861903d202273d1a9cb0
+        asset_class: bwa_index
+        asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
     genome_description: The Phix (RTA) reference sequence from Illumina
 genome_archive_folder: /project/shefflab//deploy/aws_igenomes/genomes/archive
 genome_archive_config: refgenie_config_archive.yaml
