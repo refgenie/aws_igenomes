@@ -1108,6 +1108,31 @@ genomes:
             legacy_archive_digest: b86b66869292bf0b5c9ae04b6504bb57
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            seek_keys:
+              fasta: 98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0.fa
+              fai: 98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0.fa.fai
+              chrom_sizes: 98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0.chrom.sizes
+              dict: 98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0.dict
+              dir: .
+            archive_digest: 53ce9025955dee1f653cea0183b62fa0
+            archive_size: 861.2MB
+            asset_size: 3.0GB
+            asset_parents: []
+            asset_children: 
+             - 98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0/bowtie2_index:2.4.1
+             - 98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0/bwa_index:0.7.17
+             - 98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0/star_index:2.7.3a
+             - 98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0/bismark_bt2_index:0.22.1
+             - 98ed63fa7a0acc1fbcfddc6ee12aebc56ca8f5d51e0627b0/bowtie1_index:1.3.0
+            asset_digest: d6aefa593a312b1c373783114244c353
+            legacy_archive_digest: 2fb78f9153446fd63baf020522ad7260
   6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8:
     genome_description: The Arabidopsis Thaliana (TAIR10) reference sequence from NCBI
     aliases: 
@@ -1258,6 +1283,33 @@ genomes:
             legacy_archive_digest: 55e88d8e7215d8785434404261ad3294
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            asset_digest: b5231e55bb754930d495e4dae1ff9390
+            custom_properties:
+              version: 1.1
+            date_built: 2021-08-24_21:26
+            seek_keys:
+              fasta: 6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8.fa
+              fai: 6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8.fa.fai
+              chrom_sizes: 6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8.chrom.sizes
+              dict: 6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8.dict
+              dir: .
+            asset_parents: []
+            asset_children: 
+             - 6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8/bowtie2_index:2.4.1
+             - 6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8/bwa_index:0.7.17
+             - 6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8/star_index:2.7.3a
+             - 6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8/bismark_bt2_index:0.22.1
+             - 6f04a6687f840d5851532fa0713c97013aaf2e81dd2cfaf8/bowtie1_index:1.3.0
+            archive_digest: 3ae7a5c420ceabb95c98f142e48b9107
+            archive_size: 34.4MB
+            asset_size: 115.3MB
   d517bf07149fc5248d2983618ebdb07584d2a9a281729fc1:
     genome_description: The Caenorhabditis Elegans (WS210) reference sequence from Ensembl
     aliases: 
@@ -2576,6 +2628,33 @@ genomes:
             legacy_archive_digest: b79abf9aadf0d246fc3685d7bcce073c
         asset_class: bowtie1_index
         asset_description: Genome index for bowtie1, produced with bowtie-build
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            asset_digest: c90868fc73cc6985410e61adc0a07b9f
+            custom_properties:
+              version: 1.1
+            date_built: 2021-08-24_21:47
+            seek_keys:
+              fasta: 1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770.fa
+              fai: 1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770.fa.fai
+              chrom_sizes: 1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770.chrom.sizes
+              dict: 1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770.dict
+              dir: .
+            asset_parents: []
+            asset_children: 
+             - 1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770/bowtie2_index:2.4.1
+             - 1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770/bwa_index:0.7.17
+             - 1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770/star_index:2.7.3a
+             - 1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770/bismark_bt2_index:0.22.1
+             - 1a9355e9c988fa829f9d6fa71a2eb769e26f1255575ae770/bowtie1_index:1.3.0
+            archive_digest: ec7e4485460739e747fab8ca0ba6fe39
+            archive_size: 778.9MB
+            asset_size: 2.6GB
   f51a9ecfb53259471cb46359deb09d6d7483c2a764f87da4:
     genome_description: The Homo Sapiens (build37.2) reference sequence from NCBI
     aliases: 
@@ -4230,6 +4309,31 @@ genomes:
             legacy_archive_digest: 2d4e747536a848462af5dd424ba845e4
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            seek_keys:
+              fasta: 443c763a34b124ad963f91014b62d7dea19ebd27df0d1278.fa
+              fai: 443c763a34b124ad963f91014b62d7dea19ebd27df0d1278.fa.fai
+              chrom_sizes: 443c763a34b124ad963f91014b62d7dea19ebd27df0d1278.chrom.sizes
+              dict: 443c763a34b124ad963f91014b62d7dea19ebd27df0d1278.dict
+              dir: .
+            archive_digest: 0fb5f030e3f64b47bf183c4386ae7e33
+            archive_size: 828.2MB
+            asset_size: 2.6GB
+            asset_parents: []
+            asset_children: 
+             - 443c763a34b124ad963f91014b62d7dea19ebd27df0d1278/bowtie2_index:2.4.1
+             - 443c763a34b124ad963f91014b62d7dea19ebd27df0d1278/bwa_index:0.7.17
+             - 443c763a34b124ad963f91014b62d7dea19ebd27df0d1278/star_index:2.7.3a
+             - 443c763a34b124ad963f91014b62d7dea19ebd27df0d1278/bismark_bt2_index:0.22.1
+             - 443c763a34b124ad963f91014b62d7dea19ebd27df0d1278/bowtie1_index:1.3.0
+            asset_digest: e9a7344fedfb43ed561d5d071d1b43a7
+            legacy_archive_digest: d687d66c4fd50cbc7d358f43e85435c3
   4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710:
     genome_description: The Caenorhabditis Elegans (WS190) reference sequence from NCBI
     aliases: 
@@ -4362,6 +4466,31 @@ genomes:
             legacy_archive_digest: 328c2d9025a1fe069e7f8765797bfe8b
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            seek_keys:
+              fasta: 4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710.fa
+              fai: 4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710.fa.fai
+              chrom_sizes: 4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710.chrom.sizes
+              dict: 4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710.dict
+              dir: .
+            archive_digest: fd7eb1967647d8c0fbf7139314d78f99
+            archive_size: 28.7MB
+            asset_size: 97.0MB
+            asset_parents: []
+            asset_children: 
+             - 4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710/bowtie2_index:2.4.1
+             - 4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710/star_index:2.7.3a
+             - 4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710/bwa_index:0.7.17
+             - 4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710/bismark_bt2_index:0.22.1
+             - 4330e61cdb84e95940484bc1153739e1c83d0abdd5a86710/bowtie1_index:1.3.0
+            asset_digest: cc91073b2357b58432499f04a3b2a652
+            legacy_archive_digest: 2a22ed34968352c83956eef0788fc917
   8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b:
     genome_description: The Homo Sapiens (GRCh38Decoy) reference sequence from NCBI
     aliases: 
@@ -4460,6 +4589,31 @@ genomes:
             legacy_archive_digest: 9eb3f03936bbf61b02c609968a2eff0b
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            seek_keys:
+              fasta: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.fa
+              fai: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.fa.fai
+              chrom_sizes: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.chrom.sizes
+              dict: 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b.dict
+              dir: .
+            archive_digest: aed9d4817e5b231e8b27c182d694ff87
+            archive_size: 828.7MB
+            asset_size: 2.9GB
+            asset_parents: []
+            asset_children: 
+             - 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b/bowtie2_index:2.4.1
+             - 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b/bwa_index:0.7.17
+             - 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b/star_index:2.7.3a
+             - 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b/bismark_bt2_index:0.22.1
+             - 8c828f59f82c83c43faedc70cd0e6e97ef41d950ccc1b40b/bowtie1_index:1.3.0
+            asset_digest: 4d335b851ac3938e82d70ce0b210b8c1
+            legacy_archive_digest: 6a37ff01423f780e8261a931d52edf48
   bf08592a8d52ac581557176757c1cff118345ff18ee80927:
     genome_description: The Rattus Norvegicus (RGSC_v3.4) reference sequence from NCBI
     aliases: 
@@ -8254,6 +8408,33 @@ genomes:
             legacy_archive_digest: 048ed02c5b14242e785b012330eafc5b
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            asset_digest: c3b760b410701169761b5af1e56b0870
+            custom_properties:
+              version: 1.1
+            date_built: 2021-08-24_21:35
+            seek_keys:
+              fasta: 251d26e65968f0164314dc5510210ba96e90ecb2b84813dd.fa
+              fai: 251d26e65968f0164314dc5510210ba96e90ecb2b84813dd.fa.fai
+              chrom_sizes: 251d26e65968f0164314dc5510210ba96e90ecb2b84813dd.chrom.sizes
+              dict: 251d26e65968f0164314dc5510210ba96e90ecb2b84813dd.dict
+              dir: .
+            asset_parents: []
+            asset_children: 
+             - 251d26e65968f0164314dc5510210ba96e90ecb2b84813dd/bowtie2_index:2.4.1
+             - 251d26e65968f0164314dc5510210ba96e90ecb2b84813dd/star_index:2.7.3a
+             - 251d26e65968f0164314dc5510210ba96e90ecb2b84813dd/bwa_index:0.7.17
+             - 251d26e65968f0164314dc5510210ba96e90ecb2b84813dd/bismark_bt2_index:0.22.1
+             - 251d26e65968f0164314dc5510210ba96e90ecb2b84813dd/bowtie1_index:1.3.0
+            archive_digest: b50918c69bfff60dd53ace8fde3f101e
+            archive_size: 28.9MB
+            asset_size: 97.3MB
   23065fdd9d285f60ec8a674425355d40c0d17dd182b5deb8:
     genome_description: The Canis Familiaris (build3.1) reference sequence from NCBI
     aliases: 
@@ -9620,6 +9801,31 @@ genomes:
             legacy_archive_digest: 79d1f70153a5f9c3b0004a4de541c088
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            seek_keys:
+              fasta: 8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd.fa
+              fai: 8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd.fa.fai
+              chrom_sizes: 8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd.chrom.sizes
+              dict: 8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd.dict
+              dir: .
+            archive_digest: 191230886f8a0bb8e17f77ae7661b1e9
+            archive_size: 800.7MB
+            asset_size: 3.0GB
+            asset_parents: []
+            asset_children: 
+             - 8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd/bowtie2_index:2.4.1
+             - 8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd/bwa_index:0.7.17
+             - 8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd/star_index:2.7.3a
+             - 8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd/bismark_bt2_index:0.22.1
+             - 8d92cd6c27c638d10eb921e2e3af89da8d2a75b6cb3d9cfd/bowtie1_index:1.3.0
+            asset_digest: dc09b2ed841cc86e7efa8be06228b4e7
+            legacy_archive_digest: 3c8d3df09f973ab682a6b572c32b9cf8
     genome_description: The Pan Troglodytes (CHIMP2.1.4) reference sequence from Ensembl
   09f77b43935f4202ae69ccaf171b36b43709c447cb7bd69c:
     aliases: 
@@ -11010,6 +11216,31 @@ genomes:
             legacy_archive_digest: 86adfeac2603c1f446992ff63aa633e7
         asset_class: bowtie2_index
         asset_description: Genome index for bowtie, produced with bowtie-build
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            seek_keys:
+              fasta: f01d11bd41587682fdaf207aaf09a90769de53040ed7474b.fa
+              fai: f01d11bd41587682fdaf207aaf09a90769de53040ed7474b.fa.fai
+              chrom_sizes: f01d11bd41587682fdaf207aaf09a90769de53040ed7474b.chrom.sizes
+              dict: f01d11bd41587682fdaf207aaf09a90769de53040ed7474b.dict
+              dir: .
+            archive_digest: 42fc87a992679f441b3a35c66a8ea1ef
+            archive_size: 387.5MB
+            asset_size: 1.3GB
+            asset_parents: []
+            asset_children: 
+             - f01d11bd41587682fdaf207aaf09a90769de53040ed7474b/bowtie2_index:2.4.1
+             - f01d11bd41587682fdaf207aaf09a90769de53040ed7474b/bwa_index:0.7.17
+             - f01d11bd41587682fdaf207aaf09a90769de53040ed7474b/star_index:2.7.3a
+             - f01d11bd41587682fdaf207aaf09a90769de53040ed7474b/bismark_bt2_index:0.22.1
+             - f01d11bd41587682fdaf207aaf09a90769de53040ed7474b/bowtie1_index:1.3.0
+            asset_digest: b9d00205ea230e92f5862e73f6af7b79
+            legacy_archive_digest: a7c73925d3ebdd1d6bc1106918db0038
     genome_description: The Danio Rerio (Zv9) reference sequence from Ensembl
   ff66c18d5f9c4e8793ca3069708139a3ac12a4981aac699d:
     aliases: 
@@ -11849,6 +12080,31 @@ genomes:
             legacy_archive_digest: ffd75f511dfcf8e582e3f6902c2c6c14
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            seek_keys:
+              fasta: 9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc.fa
+              fai: 9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc.fa.fai
+              chrom_sizes: 9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc.chrom.sizes
+              dict: 9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc.dict
+              dir: .
+            archive_digest: 303359652a7cc961fb003d13244bc666
+            archive_size: 800.5MB
+            asset_size: 2.5GB
+            asset_parents: []
+            asset_children: 
+             - 9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc/bowtie2_index:2.4.1
+             - 9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc/bwa_index:0.7.17
+             - 9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc/star_index:2.7.3a
+             - 9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc/bismark_bt2_index:0.22.1
+             - 9dd3aec7f1271f9a9810bb2db8fd38d1225203b7498a30bc/bowtie1_index:1.3.0
+            asset_digest: 9fdbf54b5bb3ab5f46fc414e1ab58b42
+            legacy_archive_digest: 08cf943183426a2b638094da0737ad75
     genome_description: The Mus Musculus (mm9) reference sequence from UCSC
   05e62106248aa5e5a05efc2833d4262ab1a08da8f5f54f79:
     aliases: 
@@ -12477,6 +12733,33 @@ genomes:
             legacy_archive_digest: 3b05c19a11c94413ec8038057f257ed6
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            asset_digest: 0c5834e750560253b31b2b4c5a5dc601
+            custom_properties:
+              version: 1.1
+            date_built: 2021-08-24_21:47
+            seek_keys:
+              fasta: 4dffabfea72b853ee1b1b1b488589acf447b48df309803de.fa
+              fai: 4dffabfea72b853ee1b1b1b488589acf447b48df309803de.fa.fai
+              chrom_sizes: 4dffabfea72b853ee1b1b1b488589acf447b48df309803de.chrom.sizes
+              dict: 4dffabfea72b853ee1b1b1b488589acf447b48df309803de.dict
+              dir: .
+            asset_parents: []
+            asset_children: 
+             - 4dffabfea72b853ee1b1b1b488589acf447b48df309803de/bowtie2_index:2.4.1
+             - 4dffabfea72b853ee1b1b1b488589acf447b48df309803de/bwa_index:0.7.17
+             - 4dffabfea72b853ee1b1b1b488589acf447b48df309803de/star_index:2.7.3a
+             - 4dffabfea72b853ee1b1b1b488589acf447b48df309803de/bismark_bt2_index:0.22.1
+             - 4dffabfea72b853ee1b1b1b488589acf447b48df309803de/bowtie1_index:1.3.0
+            archive_digest: e872f38d19871341848922213e1d7db0
+            archive_size: 680.8MB
+            asset_size: 2.5GB
     genome_description: The Sus Scrofa (Sscrofa10.2) reference sequence from Ensembl
   6f1e4c9fc1fc57e81c2d860c6c614f7db07d192dbd8585ae:
     aliases: 
@@ -12813,6 +13096,31 @@ genomes:
             legacy_archive_digest: a3fc7c248fd4861903d202273d1a9cb0
         asset_class: bwa_index
         asset_description: Genome index for Burrows-Wheeler Alignment Tool, produced with bwa index
+      fasta:
+        asset_description: DNA sequences in the FASTA format, indexed FASTA (produced with samtools index), chromosome sizes file and FASTA dict (produced with samtools dict)
+        default_tag: samtools-1.10
+        asset_class: fasta
+        tags:
+          samtools-1.10:
+            asset_path: fasta
+            seek_keys:
+              fasta: 2627e75b56fa4b74655d00545dd3b424db7fecf54969213a.fa
+              fai: 2627e75b56fa4b74655d00545dd3b424db7fecf54969213a.fa.fai
+              chrom_sizes: 2627e75b56fa4b74655d00545dd3b424db7fecf54969213a.chrom.sizes
+              dict: 2627e75b56fa4b74655d00545dd3b424db7fecf54969213a.dict
+              dir: .
+            archive_digest: 61cda769182ea9a91e9007d5b05a5747
+            archive_size: 2.2KB
+            asset_size: 79.1KB
+            asset_parents: []
+            asset_children: 
+             - 2627e75b56fa4b74655d00545dd3b424db7fecf54969213a/bowtie2_index:2.4.1
+             - 2627e75b56fa4b74655d00545dd3b424db7fecf54969213a/bwa_index:0.7.17
+             - 2627e75b56fa4b74655d00545dd3b424db7fecf54969213a/star_index:2.7.3a
+             - 2627e75b56fa4b74655d00545dd3b424db7fecf54969213a/bismark_bt2_index:0.22.1
+             - 2627e75b56fa4b74655d00545dd3b424db7fecf54969213a/bowtie1_index:1.3.0
+            asset_digest: 7f7c0ec9fa610ee794b3e15f4dab27ca
+            legacy_archive_digest: b3c2c9cc6cdb256beea71bf28360e389
     genome_description: The Phix (RTA) reference sequence from Illumina
 genome_archive_folder: /project/shefflab//deploy/aws_igenomes/genomes/archive
 genome_archive_config: refgenie_config_archive.yaml
